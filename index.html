@@ -1,0 +1,3875 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="RTFuCwl0V7Y1JIEszWP5iY4bCpofKtKFnsRU6xI7">
+<title>VeriGuide Document Statistics Dashboard</title>
+
+<link rel="apple-touch-icon" type="image/png" sizes="57x57" href="https://statistics.veriguide.org:8443/vgdocstatscan/icons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="https://statistics.veriguide.org:8443/vgdocstatscan/icons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" type="image/png" sizes="72x72" href="https://statistics.veriguide.org:8443/vgdocstatscan/icons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="https://statistics.veriguide.org:8443/vgdocstatscan/icons/apple-touch-icon-76x76.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://statistics.veriguide.org:8443/vgdocstatscan/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://statistics.veriguide.org:8443/vgdocstatscan/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://statistics.veriguide.org:8443/vgdocstatscan/icons/favicon-16x16.png">
+
+<link rel="shortcut icon" href="https://statistics.veriguide.org:8443/vgdocstatscan/icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="KEEP">
+<meta name="application-name" content="KEEP">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-config" content="https://statistics.veriguide.org:8443/vgdocstatscan/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<script type="text/javascript" src="assets/jquery-1.js"></script>
+<script type="text/javascript" src="assets/jquery.js"></script>
+<script type="text/javascript" src="assets/initsetup.js"></script>
+<script type="text/javascript" src="assets/utility.js"></script>
+
+
+
+
+<link href="assets/css.css" rel="stylesheet">
+<link href="assets/css_003.css" rel="stylesheet">
+
+
+<!-- <link href="https://statistics.veriguide.org:8443/vgdocstatscan/css/c3.min.css" rel="stylesheet"> -->
+<link href="assets/c3.css" rel="stylesheet">
+
+
+
+
+<link href="assets/responsive.css" rel="stylesheet"> 
+
+
+<link href="assets/keepdashboard-datatable.css" rel="stylesheet"> 
+
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css
+">
+
+
+<link rel="stylesheet" href="assets/keeplogo.css">
+<link rel="stylesheet" href="assets/keepmenu.css">
+<link rel="stylesheet" href="assets/keepfooter.css">
+
+
+<link rel="stylesheet" href="assets/bootstrap-datetimepicker.css">
+
+
+<!-- <link rel="stylesheet" href="https://statistics.veriguide.org:8443/vgdocstatscan/css/keepdashboard.css"> -->
+
+
+<link rel="stylesheet" href="assets/normalize.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/icon.css">
+<link rel="stylesheet" href="assets/css_002.css">
+<link rel="stylesheet" href="assets/material-components-web.css">
+<link rel="stylesheet" href="assets/styles_002.css">
+<link rel="stylesheet" href="assets/styles.css">
+<script src="assets/material-components-web.js"></script>
+
+
+<link rel="stylesheet" href="assets/sl-vue-tree-minimal.css">
+<script src="assets/sl-vue-tree.js"></script>
+<script src="assets/vue-context.js"></script><style type="text/css">.v-context {
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  display: block;
+  margin: 0;
+  padding: 10px 0;
+  min-width: 10rem;
+  z-index: 1500;
+  position: fixed;
+  list-style: none;
+  box-sizing: border-box;
+}
+.v-context > li {
+  margin: 0;
+}
+.v-context > li > a {
+  display: block;
+  padding: 0.5rem 1.5rem;
+  font-weight: 400;
+  color: #212529;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+.v-context > li > a:hover, .v-context > li > a:focus {
+  text-decoration: none;
+  color: #212529;
+  background-color: #f8f9fa;
+}
+.v-context > li > a:focus {
+  outline: 0;
+}
+.v-context:focus {
+  outline: 0;
+}</style>
+<script src="assets/vue2.js"></script>
+
+
+<!-- <link rel="stylesheet" type='text/css' href="https://statistics.veriguide.org:8443/vgdocstatscan/css/docstat.css  "/> -->
+<link rel="stylesheet" type="text/css" href="assets/docstat2_color.css">
+<link rel="stylesheet" type="text/css" href="assets/docstat2.css">
+
+
+
+
+<script src="assets/Chart.js"></script>
+
+<script src="assets/wordcloud1.js"></script>
+<script src="assets/gauge-custom.js"></script>
+
+
+
+<script src="assets/jquery_002.js"></script>
+
+
+<script src="assets/d3.js"></script>
+<!-- <script src="https://statistics.veriguide.org:8443/vgdocstatscan/js/c3.min.js"></script> -->
+<script src="assets/c3.js"></script>
+<script src="assets/c3-dashboard.js"></script>
+
+
+<script src="assets/jquery_003.js"></script>
+<script src="assets/time.js"></script>
+<script src="assets/dataTables.js"></script>
+
+
+<script>
+var VG_USER_COOKIE_1 = `vg3593a333b5523` || null;
+var VG_SP_SAML_COOKIE = `sp568ebb816e204bcb8ae5c599e1ada07d` || null;
+var VG_LOGIN_URL = `https://academic-test.veriguide.org:8092/vg_cuhk_cuhk_adfs/saml/login` || null;
+var VG_LOGOUT_REDIRECT = `https://academic-test.veriguide.org:8089/vg_cuhk_cuhk_adfs/saml/logout?redirectTo=` || null;
+</script>
+<script type="text/javascript" src="assets/keepmenu.js"></script>
+<script type="text/javascript" src="assets/handlebars.js"></script>
+
+
+<script type="text/javascript" src="assets/moment.js"></script>
+
+<script>
+//=======Data Table ======
+$.fn.dataTable.ext.errMode = 'none';
+$.extend($.fn.dataTable.defaults, {
+  "language": {
+    "emptyTable": "No data available"
+  }
+});
+
+function createDataTable(targetId, dataSet, columnSetting) {
+
+  var baseSetting = {
+    data: dataSet,
+    "language": {
+      "emptyTable": "No data available"
+    }
+  };
+
+  if (dataSet.length > 0) {
+    pagingSetting = {
+      pagingType: 'simple',
+      language: {
+        paginate: {
+          previous: '<span class="glyphicon glyphicon-chevron-left"></span>',
+          next: '<span class="glyphicon glyphicon-chevron-right"></span>',
+        },
+        "info": "_START_-_END_ of _TOTAL_",
+        "infoEmpty": "_END_ of _TOTAL_",
+        "infoFiltered": "",
+      },
+      pageLength: 5,
+      "dom": 'frtpi',
+      responsive: {
+        details: {
+          type: 'column',
+          target: 'tr'
+        }
+      }
+    };
+  } else {
+    pagingSetting = {
+      paging: false,
+      info: false,
+      responsive: true
+    };
+  }
+
+  //var dataTableSetting = Object.assign(baseSetting,columnSetting, pagingSetting);
+  var dataTableSetting = $.extend(baseSetting, columnSetting, pagingSetting);
+  return $(targetId).DataTable(dataTableSetting);
+}
+</script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+// -- Menu --
+var profile_pic_url = ""+"hi";
+var name = "hi";
+var loginURL = "/login";
+var logoutURL = "/logout";
+
+// -- Menu --
+// keepmenu('KEEP', null, name, loginURL, logoutURL,null,null,null,null,profile_pic_url);
+
+});
+</script>
+
+
+
+<style type="text/css">/* Chart.js */
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style></head>
+<body>
+  <div id="top"></div>
+<a href="#top" class="btn-btt" style="display: none;"><div class="dashboard-backtotop"><i class="fa fa-caret-up" aria-hidden="true"></i></div></a>  <nav id="keepmenu"></nav>
+  
+
+<!-- Fixed Nav Bar (Mobile) -->
+<nav id="mainNav" class="navbar navbar-default" style="display: none;">
+  <div class="container">
+    <!-- <a class="btn btn-info" href="/keepdashboard/docstat">Home</a> -->
+    <!-- <a class="btn btn-info" href="/keepdashboard/docstat/institution">Institution</a> -->
+    <!-- <a class="btn btn-info" href="/keepdashboard/docstat/enrolled">Enrolled</a> -->
+    <a class="btn btn-info" href="https://statistics.veriguide.org:8443/keepdashboard/docstat/course/fbbb4ad8-d657-4871-88d6-b6be38cb072c">Course</a>
+    <a class="btn btn-info" href="https://statistics.veriguide.org:8443/keepdashboard/docstat/assignment/fbbb4ad8-d657-4871-88d6-b6be38cb072c/3">Assignment</a>
+    <a class="btn btn-info" href="https://statistics.veriguide.org:8443/keepdashboard/docstat/submission/10000100">Submission</a>
+  </div>
+</nav>
+<!--=======================-->
+
+<script type="text/javascript">
+window.submission_info = {"errorCode":null,"errorMessage":null,"forceShowClientAlert":null,"loggedInUser":{"name":"b00003","aliasEmail":"b00003@cuhk.edu.hk","uuidToken":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxXzFmNjZkMjBkLTIyMDgtNDk0ZC1hOWU5LWIzMTQ1MjYwYzNiNSIsImV4cCI6MTYyNDg1MTEzNSwiaXNzIjoib3JnLnZlcmlndWlkZS5zZWN1cml0eS5yZXN0In0.YefcVsPxy6u2ve6TnxP\/6bF9vr0m\/IZXL+okN3nMlvnmHzujZl1ZU6qedI2HZ6pZf\/se+gBA9KlLcPMqJgdDNw","authenticationState":"authenticated","samlLogin":null,"userProfile":{"accessibleFunctions":[{"id":2000}],"uploadSubmission":false,"assignmentSubmissionHistory":false,"selfCheckSubmissionHistory":false},"userViewState":{"selfCheckViewMode":"3","selectedLanguage":"en","shareRequestEndorsementCount":0,"locale":"en"},"userExpiredTime":1624851135503},"submissionPageInfo":{"errorCode":null,"errorMessage":null,"forceShowClientAlert":null,"submissionRefId":3000003099,"schoolInstitution":"The Chinese University of Hong Kong","acadYear":2017,"term":"2","course":"_TEST-9959--A","courseTitle":"VeriGuide Test Course","assignmentNumberName":"89","assignmentMarker":"","student":"","studentId":"b114092","fileName":"test20191122a.zip","submittedOn":"2019-11-22 10:58:55 +0800","subjectArea":"_TEST","catalogNumber":"9959","sectionCode":"-A","yearTerm":"2017-2018 \/ 2","yearTermCourseCodeSection":"2017R2-_TEST-9959--A","indvFilesSize":5,"indvFiles":[{"docId":69196799,"parentDocId":-1,"status":"Decompressed","timestamp":"2019-11-22 11:01:00","submissionId":4159373,"isArchive":true,"fileName":"test20191122a.zip"},{"docId":69196800,"parentDocId":69196799,"status":"Formatted","timestamp":"2019-11-22 11:01:01","submissionId":4159373,"isArchive":false,"fileName":"TESTING1.pdf"},{"docId":69196801,"parentDocId":69196799,"status":"Formatted","timestamp":"2019-11-22 11:01:03","submissionId":4159373,"isArchive":false,"fileName":"TESTING1_traditional.docx"},{"docId":69196802,"parentDocId":69196799,"status":"Formatted","timestamp":"2019-11-22 11:01:03","submissionId":4159373,"isArchive":false,"fileName":"TESTING1_traditional_modified.docx"},{"docId":69196803,"parentDocId":69196799,"status":"Formatted","timestamp":"2019-11-22 11:01:03","submissionId":4159373,"isArchive":false,"fileName":"testing2.pdf"}]}};
+</script>
+
+<aside class="mdc-drawer mdc-drawer--modal">
+  <div class="mdc-drawer__content">
+    <div class="mdc-list">
+      <!-- <a class="mdc-list-item" href="#" aria-current="page" tabindex="0">
+      
+        <span class="mdc-list-item__ripple"></span>
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+        <span class="mdc-list-item__text">Submission</span>
+      </a> -->
+      <a class="mdc-list-item" href="https://statistics.veriguide.org:8443/vgdocstatscan/docstat/glossary" aria-current="page" tabindex="0">
+        <span class="mdc-list-item__ripple"></span>
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+        <span class="mdc-list-item__text">Glossary</span>
+      </a>
+      <!--
+      <a class="mdc-list-item" href="#">
+        <span class="mdc-list-item__ripple"></span>
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
+        <span class="mdc-list-item__text">Drafts</span>
+      </a>
+      -->
+    </div>
+
+  </div>
+</aside>
+<div class="mdc-drawer-scrim"></div>
+
+<div class="mdc-drawer-app-content">
+  <header class="mdc-top-app-bar app-bar" id="app-bar">
+  <div class="mdc-top-app-bar__row">
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+      <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" style="--mdc-ripple-fg-size:28px; --mdc-ripple-fg-scale:1.7142857142857142; --mdc-ripple-left:10px; --mdc-ripple-top:10px;">menu</button>
+      <span class="mdc-top-app-bar__title">
+        <span class="mdc-typography--headline6">VeriGuide Document Statistics</span>
+      </span>
+    </section>
+
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+      <a class="Xmenu-item" href="javascript:logout()" title="Logout">
+        <span class="mdc-cell--hide-phone">Logout&nbsp;</span>
+        <i class="fa fa-sign-out fa-lg" aria-hidden="true"></i>
+      </a>
+    </section>
+  </div>
+</header>
+
+  <main class="main-content" id="main-content">
+    <div class="mdc-top-app-bar--fixed-adjust">
+
+
+        <div class="">
+
+          <section class="bg1">
+          <article class="mdc-layout-grid docstat_wrapper">
+          <h4 class="mdc-typography--headline4">Basic information</h4>
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+              
+              <div class="mdc-card">
+                <div class="mdc-card-wrapper__text-section">
+                  <div class="demo-card__title">About this submission</div>
+
+                  <div class="mdc-data-table docstat_basic_info_table">
+                    <div class="mdc-data-table__table-container">
+                      <table class="mdc-data-table__table">
+
+                        <thead>
+                          <tr class="mdc-data-table__header-row">
+                            <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Item</th>
+                            <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Information</th>
+                          </tr>
+                        </thead>
+
+
+                        <tbody class="mdc-data-table__content">
+                          <tr class="mdc-data-table__row">
+                            <td class="mdc-data-table__cell basic_info_field">Submission reference ID</td>
+                            <td class="mdc-data-table__cell">3000003099</td>
+                          </tr>
+                          <tr class="mdc-data-table__row">
+                            <td class="mdc-data-table__cell basic_info_field">School institution</td>
+                            <td class="mdc-data-table__cell">The Chinese University of Hong Kong</td>
+                          </tr>
+                          <tr class="mdc-data-table__row">
+                            <td class="mdc-data-table__cell basic_info_field">Academic year</td>
+                            <td class="mdc-data-table__cell">2017</td>
+                          </tr>
+                          <tr class="mdc-data-table__row">
+                            <td class="mdc-data-table__cell basic_info_field">Term</td>
+                            <td class="mdc-data-table__cell">2</td>
+                          </tr>
+                          <tr class="mdc-data-table__row">
+                            <td class="mdc-data-table__cell basic_info_field">Course</td>
+                            <td class="mdc-data-table__cell">_TEST-9959--A</td>
+                          </tr>
+                          <tr class="mdc-data-table__row">
+                            <td class="mdc-data-table__cell basic_info_field">Course title</td>
+                            <td class="mdc-data-table__cell">VeriGuide Test Course</td>
+                          </tr>
+                          <tr class="mdc-data-table__row">
+                            <td class="mdc-data-table__cell basic_info_field">Assignment number</td>
+                            <td class="mdc-data-table__cell">89</td>
+                          </tr>
+
+                          <tr class="mdc-data-table__row">
+                            <td class="mdc-data-table__cell basic_info_field">Assignment marker</td>
+                            <td class="mdc-data-table__cell"></td>
+                          </tr>
+                          <tr class="mdc-data-table__row">
+                            <td class="mdc-data-table__cell basic_info_field">Student</td>
+                            <td class="mdc-data-table__cell"></td>
+                          </tr>
+                          <tr class="mdc-data-table__row">
+                            <td class="mdc-data-table__cell basic_info_field">Student ID</td>
+                            <td class="mdc-data-table__cell">b114092</td>
+                          </tr>
+                          <tr class="mdc-data-table__row">
+                            <td class="mdc-data-table__cell basic_info_field">File name</td>
+                            <td class="mdc-data-table__cell">test20191122a.zip</td>
+                          </tr>
+                          <tr class="mdc-data-table__row">
+                            <td class="mdc-data-table__cell basic_info_field">Submitted on</td>
+                            <td class="mdc-data-table__cell">2019-11-22 10:58:55 +0800</td>
+                          </tr>
+
+                          <!-- <tr><td class="mdc-data-table__cell basic_info_field">subjectArea</td> <td>_TEST</td></tr> -->
+                          <!-- <tr><td class="mdc-data-table__cell basic_info_field">catalogNumber</td> <td>9959</td></tr> -->
+                          <!-- <tr><td class="mdc-data-table__cell basic_info_field">sectionCode</td> <td>-A</td></tr> -->
+                          <!-- <tr><td class="mdc-data-table__cell basic_info_field">yearTerm</td> <td>2017-2018 / 2</td></tr> -->
+                          <!-- <tr><td class="mdc-data-table__cell basic_info_field">yearTermCourseCodeSection</td> <td>2017R2-_TEST-9959--A</td></tr> -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+              
+              <div class="mdc-card">
+                <div class="mdc-card-wrapper__text-section">
+                  <div class="demo-card__title">File(s) of this submission</div>
+                  <div class="demo-card__subhead">Please click one of the items to view the statistics.</div>
+
+                  <div id="app_basic_info_filelist" class="docstat_filelist"><div class="sl-vue-tree sl-vue-tree-root"><div class="sl-vue-tree-nodes-list"><div class="sl-vue-tree-node"><div class="sl-vue-tree-cursor sl-vue-tree-cursor_before" style="visibility: hidden; --depth:0;"></div> <div path="[0]" class="sl-vue-tree-node-item sl-vue-tree-node-is-folder"> <!----> <div class="sl-vue-tree-title"><span class="sl-vue-tree-toggle"><span>
+             -
+            </span></span> <span class="filelist_icon item-icon"><!----> <i class="fa fa-folder"></i></span> <span class="mdc-typography--body1 filelist_title">test20191122a.zip</span> <!----></div> <div class="sl-vue-tree-sidebar"></div></div> <div class="sl-vue-tree"><div class="sl-vue-tree-nodes-list"><div class="sl-vue-tree-node"><div class="sl-vue-tree-cursor sl-vue-tree-cursor_before" style="visibility: hidden; --depth:1;"></div> <div path="[0,0]" class="sl-vue-tree-node-item sl-vue-tree-node-is-leaf"><div class="sl-vue-tree-gap"></div> <!----> <div class="sl-vue-tree-title"><!----> <span class="filelist_icon item-icon"><i class="fa fa-file"></i> <!----></span> <span class="mdc-typography--body1 filelist_title">TESTING1.pdf</span> <!----></div> <div class="sl-vue-tree-sidebar"></div></div> <!----> <div class="sl-vue-tree-cursor sl-vue-tree-cursor_after" style="visibility: hidden; --depth:1;"></div></div><div class="sl-vue-tree-node"><div class="sl-vue-tree-cursor sl-vue-tree-cursor_before" style="visibility: hidden; --depth:1;"></div> <div path="[0,1]" class="sl-vue-tree-node-item sl-vue-tree-node-is-leaf"><div class="sl-vue-tree-gap"></div> <!----> <div class="sl-vue-tree-title"><!----> <span class="filelist_icon item-icon"><i class="fa fa-file"></i> <!----></span> <span class="mdc-typography--body1 filelist_title">TESTING1_traditional.docx</span> <!----></div> <div class="sl-vue-tree-sidebar"></div></div> <!----> <div class="sl-vue-tree-cursor sl-vue-tree-cursor_after" style="visibility: hidden; --depth:1;"></div></div><div class="sl-vue-tree-node"><div class="sl-vue-tree-cursor sl-vue-tree-cursor_before" style="visibility: hidden; --depth:1;"></div> <div path="[0,2]" class="sl-vue-tree-node-item sl-vue-tree-node-is-leaf"><div class="sl-vue-tree-gap"></div> <!----> <div class="sl-vue-tree-title"><!----> <span class="filelist_icon item-icon"><i class="fa fa-file"></i> <!----></span> <span class="mdc-typography--body1 filelist_title">TESTING1_traditional_modified.docx</span> <!----></div> <div class="sl-vue-tree-sidebar"></div></div> <!----> <div class="sl-vue-tree-cursor sl-vue-tree-cursor_after" style="visibility: hidden; --depth:1;"></div></div><div class="sl-vue-tree-node"><div class="sl-vue-tree-cursor sl-vue-tree-cursor_before" style="visibility: hidden; --depth:1;"></div> <div path="[0,3]" class="sl-vue-tree-node-item sl-vue-tree-node-is-leaf"><div class="sl-vue-tree-gap"></div> <!----> <div class="sl-vue-tree-title"><!----> <span class="filelist_icon item-icon"><i class="fa fa-file"></i> <!----></span> <span class="mdc-typography--body1 filelist_title">testing2.pdf</span> <!----></div> <div class="sl-vue-tree-sidebar"></div></div> <!----> <div class="sl-vue-tree-cursor sl-vue-tree-cursor_after" style="visibility: hidden; --depth:1;"></div></div> <!----></div></div> <div class="sl-vue-tree-cursor sl-vue-tree-cursor_after" style="visibility: hidden; --depth:0;"></div></div> <div class="sl-vue-tree-drag-info" style="display: none;">
+        Items: 0
+      </div></div></div></div>
+
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          </article>
+          </section>
+
+
+          <section class="bg2">
+            <article class="mdc-layout-grid docstat_wrapper">
+              <div id="docstat_viewing_wrapper"></div>
+            </article>
+          </section>
+
+
+          <section class="bg2" id="docstat_viewing_cont">
+          <article class="mdc-layout-grid docstat_wrapper">
+          <div class="content">
+            <div class="mdc-chip-set" role="grid">
+              <span class="mdc-typography--overline">Viewing file: </span>
+              <div class="mdc-chip" role="row">
+                <div class="mdc-chip__ripple"></div>
+                <span role="gridcell">
+                  <span role="button" tabindex="0" class="mdc-chip__primary-action">
+                    <span id="docstat_viewing_doc">TESTING1.pdf</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          </article>
+          </section>
+          <div id="docstat_viewing_filler"></div>
+
+
+          <section class="bg2">
+          <article class="mdc-layout-grid docstat_wrapper">
+          <div class="content">
+            <h4 class="mdc-typography--headline4">
+              General statistics            </h4>
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                <div class="mdc-layout-grid__inner">
+  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-desktop">
+    <div class="mdc-card">
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__titleX mdc-typography--headline4"><span class="docstat-basic-paragraph_length">1</span></div>
+        <div class="demo-card__subhead">Paragraphs</div>
+      </div>
+      <!--
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__supporting-text">
+          Greyhound divisively hello coldly wonderfully marginally far upon
+          excluding.
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+
+  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-desktop">
+    <div class="mdc-card">
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__titleX mdc-typography--headline4"><span class="docstat-basic-sentence_length">6</span></div>
+        <div class="demo-card__subhead">Sentences</div>
+      </div>
+      <!--
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__supporting-text">
+          Greyhound divisively hello coldly wonderfully marginally far upon
+          excluding.
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+
+  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-desktop">
+    <div class="mdc-card">
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__titleX mdc-typography--headline4"><span class="docstat-basic-word_length">163</span></div>
+        <div class="demo-card__subhead">Words</div>
+      </div>
+      <!--
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__supporting-text">
+          Greyhound divisively hello coldly wonderfully marginally far upon
+          excluding.
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+
+  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-desktop">
+    <div class="mdc-card">
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__titleX mdc-typography--headline4"><span class="docstat-basic-unique_words_length">109</span></div>
+        <div class="demo-card__subhead">Distinct words</div>
+      </div>
+      <!--
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__supporting-text">
+          Greyhound divisively hello coldly wonderfully marginally far upon
+          excluding.
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+
+  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-desktop">
+    <div class="mdc-card">
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__titleX mdc-typography--headline4"><span class="docstat-basic-characters_length_with_spaces">954</span></div>
+        <div class="demo-card__subhead">Characters (with spaces)</div>
+      </div>
+      <!--
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__supporting-text">
+          Greyhound divisively hello coldly wonderfully marginally far upon
+          excluding.
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+
+  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-desktop">
+    <div class="mdc-card">
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__titleX mdc-typography--headline4"><span class="docstat-basic-characters_length">792</span></div>
+        <div class="demo-card__subhead">Characters (excluding spaces)</div>
+      </div>
+      <!--
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__supporting-text">
+          Greyhound divisively hello coldly wonderfully marginally far upon
+          excluding.
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+
+  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-desktop">
+    <div class="mdc-card">
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__titleX mdc-typography--headline4"><span class="docstat-basic-characters_with_space">162</span></div>
+        <div class="demo-card__subhead">Spaces characters</div>
+      </div>
+      <!--
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__supporting-text">
+          Greyhound divisively hello coldly wonderfully marginally far upon
+          excluding.
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+
+  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-desktop">
+    <div class="mdc-card">
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__titleX mdc-typography--headline4"><span class="docstat-basic-count_specialcharactersonly">14</span></div>
+        <div class="demo-card__subhead">Special characters</div>
+      </div>
+      <!--
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__supporting-text">
+          Greyhound divisively hello coldly wonderfully marginally far upon
+          excluding.
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+
+  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-desktop">
+    <div class="mdc-card">
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__titleX mdc-typography--headline4"><span class="docstat-basic-count_numberfigure">1</span></div>
+        <div class="demo-card__subhead">Numerical terms</div>
+      </div>
+      <!--
+      <div class="mdc-card-wrapper__text-section">
+        <div class="demo-card__supporting-text">
+          Greyhound divisively hello coldly wonderfully marginally far upon
+          excluding.
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+</div>
+
+
+                <p>
+                  <a href="https://statistics.veriguide.org:8443/vgdocstatscan/docstat/glossary#submission_general_paragraph" target="_blank" rel="noopener noreferrer">
+                    <span class="material-icons">info</span>
+                    <span>Click here to learn more.</span>
+                  </a>
+                </p><p>
+              </p></div>
+            </div>
+
+            <h4 class="mdc-typography--headline4">
+              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+              Tips and feedback            </h4>
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                <div class="mdc-card">
+                  <div class="mdc-card-wrapper__text-section">
+                    <p>
+                      <span class="docstat-basic-feedback_text">The word
+ variety is good with usage of both common and uncommon words. A strong 
+vocabulary is demonstrated in this response. The word choice of the 
+essay excels in familiarity, suggesting that the essay excels in 
+expression. </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <h4 class="mdc-typography--headline4">
+              <span>Lexical metrics</span>
+              <span class="glyphicon glyphicon-info-sign" data-toggle="modal" data-target="#radar_chartModal" aria-hidden="true"></span>
+            </h4>
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                <canvas id="myRadarChart" style="display: block; width: 599px; height: 299px;" class="chartjs-render-monitor" width="599" height="299"></canvas>
+
+              </div>
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+                <p>This is measure of textual lexical diversity (MTLD)</p>
+                <p class="text-muted">The larger area under this chart, the easier to read the passage.</p>
+                <p>
+                  <a href="https://statistics.veriguide.org:8443/vgdocstatscan/docstat/glossary#lexical_metric" target="_blank" rel="noopener noreferrer">
+                    <span class="material-icons">info</span>
+                    <span>Click here to learn more.</span>
+                  </a>
+                </p><p>
+              </p></div>
+            </div>
+
+
+            <h4 class="mdc-typography--headline4">
+              <span>Part of speech tagging distribution</span>
+            </h4>
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+                <div id="barchart-container"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+  
+<canvas id="myChart" style="display: block; width: 599px; height: 359px;" class="chartjs-render-monitor" width="599" height="359"></canvas></div>
+
+              </div>
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+                <p><span>This chart is showing the distributon of the percentage of part of speech tagging.</span></p>
+                <p>Mouseover the bars to see the exact percentage figures.</p>
+                <a href="https://statistics.veriguide.org:8443/vgdocstatscan/docstat/glossary#part_of_speech_percentage" target="_blank" rel="noopener noreferrer">
+                  <span class="material-icons">info</span>
+                  <span>Click here to learn more.</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          </article>
+          </section>
+
+
+          <section class="bg1">
+          <article class="mdc-layout-grid docstat_wrapper">
+          <div class="content">
+            <h4 class="mdc-typography--headline4">
+              <span>Readability</span>
+            </h4>
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+                <div class="indicator_box">
+  <!-- <div class="panel-title">Flesch-Kincaid metrics</div> -->
+  <div class="row">
+    <div class="select_readability_cont col-xs-12">
+      <select class="select_readability" name="select_readability" onchange="handleSelectReadability(this.value)">
+        <option value="flesch_kincaid_grade" selected="selected">Flesch-Kincaid grade level</option>
+        <option value="smog_grade">SMOG grade</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row gauge_cont flesch_kincaid_grade">
+    <div class="chart_cont col-xs-12 col-md-6">
+      <canvas id="flesch_kincaid_grade_gauge" class="gauge_chart" data-gauge="12.7" width="340" height="200"></canvas>
+      <br>
+    </div>
+    <div class="col-xs-12 col-md-6 kt-widget1__title">
+      <div class="table-number">
+        <span id="flesch_kincaid_grade_gauge_text">12.7</span>
+      </div>
+      <div class="table-subtitle">
+        <span>Flesch-Kincaid grade level</span>
+      </div>
+      <span class="table-desp text-muted">
+      </span>
+    </div>
+  </div>
+
+  <div class="row gauge_cont smog_grade js_hide_height">
+    <div class="chart_cont col-xs-12 col-md-6">
+      <canvas id="smog_grade_gauge" class="gauge_chart" data-gauge="13.3" width="340" height="200"></canvas>
+      <br>
+    </div>
+    <div class="col-xs-12 col-md-6 kt-widget1__title">
+      <div class="table-number">
+        <span id="smog_grade_gauge_text">13.3</span>
+      </div>
+      <div class="table-subtitle">
+        <span>SMOG grade</span>
+      </div>
+      <span class="table-desp text-muted">
+      </span>
+    </div>
+  </div>
+</div>
+
+
+              </div>
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+                
+                <p>Readability is the ease with which a reader can understand a written text.</p>
+                <p>It is suggested to target to staying at the green 
+section (triangle on the scale). Hence, most of the people can undertand
+ and for advanced readers, they can be less time-consuming to read. 
+Below is a scale to indicate the easiness of reading:</p>
+
+                <div class="readability_legend_cont">
+                  <div class="readability_legend">
+                    <span style="background-color: #c9f0c9;">&nbsp;</span>
+                    <span style="background-color: #a3eda1;">&nbsp;</span>
+                    <span style="background-color: #6ddb6b;">&nbsp;</span>
+                    <span style="background-color: #30B32D;">&nbsp;</span>
+                    <span style="background-color: #FFDD00;">&nbsp;</span>
+                    <span style="background-color: #F03E3E;">&nbsp;</span>
+                    <span style="background-color: #E336B2;">&nbsp;</span>
+                  </div>
+
+                  <div class="readability_legend_label">
+                    <span style="text-align: left;">Easier to read</span>
+                    <span style="text-align: right;">Harder to read</span>
+                  </div>
+                </div>
+
+                <a class="readability_explain" href="https://statistics.veriguide.org:8443/vgdocstatscan/docstat/glossary#flesch_kincaid_grade" target="_blank" rel="noopener noreferrer">
+                  <span class="material-icons">info</span>
+                  <span>Click here to learn more.</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          </article>
+          </section>
+
+
+          <section class="bg2">
+          <article class="mdc-layout-grid docstat_wrapper">
+          <div class="content">
+            <h4 class="mdc-typography--headline4">Word frequency</h4>
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+                <div class="mdc-form-field">
+  <div class="mdc-radio">
+    <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked="checked" onchange="handleTop('top_10_phrases_cont')">
+    <div class="mdc-radio__background">
+      <div class="mdc-radio__outer-circle"></div>
+      <div class="mdc-radio__inner-circle"></div>
+    </div>
+    <div class="mdc-radio__ripple"></div>
+  </div>
+  <label for="radio-1">Top 50 words</label>
+
+  <div class="mdc-radio">
+    <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios" onchange="handleTop('top_10_lemmatized_cont')">
+    <div class="mdc-radio__background">
+      <div class="mdc-radio__outer-circle"></div>
+      <div class="mdc-radio__inner-circle"></div>
+    </div>
+    <div class="mdc-radio__ripple"></div>
+  </div>
+  <label for="radio-2">Top 50 lemmatized words</label>
+</div>
+
+<div class="table-list-wrapper top_tab_content" id="top_10_phrases_cont"><div id="top_10_phrases_wrapper" class="dataTables_wrapper no-footer"><table id="top_10_phrases" class="hover row-border dataTable no-footer dtr-column" role="grid" style="width: 100%;" width="100%"><thead><tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 4px;" aria-label=""></th><th class="sorting" tabindex="0" aria-controls="top_10_phrases" rowspan="1" colspan="1" style="width: 126px;" aria-label="Token: activate to sort column ascending">Token</th><th class="sorting_desc" tabindex="0" aria-controls="top_10_phrases" rowspan="1" colspan="1" style="width: 99px;" aria-label="Occurence: activate to sort column ascending" aria-sort="descending">Occurence</th></tr></thead><tbody><tr role="row" class="odd"><td>1</td><td><a href="#showInText=math">math</a></td><td class="sorting_1">3</td></tr><tr role="row" class="even"><td>2</td><td><a href="#showInText=calculus">calculus</a></td><td class="sorting_1">3</td></tr><tr role="row" class="odd"><td>3</td><td><a href="#showInText=Note">Note</a></td><td class="sorting_1">2</td></tr><tr role="row" class="even"><td>4</td><td><a href="#showInText=deep">deep</a></td><td class="sorting_1">2</td></tr><tr role="row" class="odd"><td>5</td><td><a href="#showInText=need">need</a></td><td class="sorting_1">2</td></tr><tr role="row" class="even"><td>6</td><td><a href="#showInText=paper">paper</a></td><td class="sorting_1">2</td></tr><tr role="row" class="odd"><td>7</td><td><a href="#showInText=stuck">stuck</a></td><td class="sorting_1">2</td></tr><tr role="row" class="even"><td>8</td><td><a href="#showInText=matrix">matrix</a></td><td class="sorting_1">2</td></tr><tr role="row" class="odd"><td>9</td><td><a href="#showInText=neural">neural</a></td><td class="sorting_1">2</td></tr><tr role="row" class="even"><td>10</td><td><a href="#showInText=section">section</a></td><td class="sorting_1">2</td></tr><tr role="row" class="odd"><td>11</td><td><a href="#showInText=learning">learning</a></td><td class="sorting_1">2</td></tr><tr role="row" class="even"><td>12</td><td><a href="#showInText=material">material</a></td><td class="sorting_1">2</td></tr><tr role="row" class="odd"><td>13</td><td><a href="#showInText=networks">networks</a></td><td class="sorting_1">2</td></tr><tr role="row" class="even"><td>14</td><td><a href="#showInText=understand">understand</a></td><td class="sorting_1">2</td></tr><tr role="row" class="odd"><td>15</td><td><a href="#showInText=1">1</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>16</td><td><a href="#showInText=try">try</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>17</td><td><a href="#showInText=use">use</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>18</td><td><a href="#showInText=way">way</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>19</td><td><a href="#showInText=help">help</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>20</td><td><a href="#showInText=wish">wish</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>21</td><td><a href="#showInText=happy">happy</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>22</td><td><a href="#showInText=links">links</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>23</td><td><a href="#showInText=order">order</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>24</td><td><a href="#showInText=point">point</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>25</td><td><a href="#showInText=start">start</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>26</td><td><a href="#showInText=train">train</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>27</td><td><a href="#showInText=worry">worry</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>28</td><td><a href="#showInText=answer">answer</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>29</td><td><a href="#showInText=assume">assume</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>30</td><td><a href="#showInText=basics">basics</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>31</td><td><a href="#showInText=deepen">deepen</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>32</td><td><a href="#showInText=needed">needed</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>33</td><td><a href="#showInText=reread">reread</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>34</td><td><a href="#showInText=attempt">attempt</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>35</td><td><a href="#showInText=explain">explain</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>36</td><td><a href="#showInText=learned">learned</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>37</td><td><a href="#showInText=provide">provide</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>38</td><td><a href="#showInText=refresh">refresh</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>39</td><td><a href="#showInText=working">working</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>40</td><td><a href="#showInText=writing">writing</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>41</td><td><a href="#showInText=examples">examples</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>42</td><td><a href="#showInText=familiar">familiar</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>43</td><td><a href="#showInText=practice">practice</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>44</td><td><a href="#showInText=previous">previous</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>45</td><td><a href="#showInText=training">training</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>46</td><td><a href="#showInText=knowledge">knowledge</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>47</td><td><a href="#showInText=necessary">necessary</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>48</td><td><a href="#showInText=questions">questions</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>49</td><td><a href="#showInText=underlying">underlying</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>50</td><td><a href="#showInText=understanding">understanding</a></td><td class="sorting_1">1</td></tr></tbody></table><div class="dataTables_paginate paging_simple" id="top_10_phrases_paginate"><a class="paginate_button previous disabled" aria-controls="top_10_phrases" data-dt-idx="0" tabindex="0" id="top_10_phrases_previous"><span class="glyphicon glyphicon-chevron-left">&lt;</span></a><a class="paginate_button next disabled" aria-controls="top_10_phrases" data-dt-idx="1" tabindex="0" id="top_10_phrases_next"><span class="glyphicon glyphicon-chevron-right">&gt;</span></a></div></div></div>
+<div class="table-list-wrapper top_tab_content js_hide" id="top_10_lemmatized_cont"><div id="top_10_lemmatized_wrapper" class="dataTables_wrapper no-footer"><table id="top_10_lemmatized" class="hover row-border dataTable no-footer dtr-column" role="grid" style="width: 100%;" width="100%"><thead><tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 0px;" aria-label=""></th><th class="sorting" tabindex="0" aria-controls="top_10_lemmatized" rowspan="1" colspan="1" style="width: 0px;" aria-label="Token: activate to sort column ascending">Token</th><th class="sorting_desc" tabindex="0" aria-controls="top_10_lemmatized" rowspan="1" colspan="1" style="width: 0px;" aria-label="Occurence: activate to sort column ascending" aria-sort="descending">Occurence</th></tr></thead><tbody><tr role="row" class="odd"><td>1</td><td><a href="#showInText=math">math</a></td><td class="sorting_1">3</td></tr><tr role="row" class="even"><td>2</td><td><a href="#showInText=need">need</a></td><td class="sorting_1">3</td></tr><tr role="row" class="odd"><td>3</td><td><a href="#showInText=calculus">calculus</a></td><td class="sorting_1">3</td></tr><tr role="row" class="even"><td>4</td><td><a href="#showInText=deep">deep</a></td><td class="sorting_1">2</td></tr><tr role="row" class="odd"><td>5</td><td><a href="#showInText=note">note</a></td><td class="sorting_1">2</td></tr><tr role="row" class="even"><td>6</td><td><a href="#showInText=learn">learn</a></td><td class="sorting_1">2</td></tr><tr role="row" class="odd"><td>7</td><td><a href="#showInText=paper">paper</a></td><td class="sorting_1">2</td></tr><tr role="row" class="even"><td>8</td><td><a href="#showInText=matrix">matrix</a></td><td class="sorting_1">2</td></tr><tr role="row" class="odd"><td>9</td><td><a href="#showInText=neural">neural</a></td><td class="sorting_1">2</td></tr><tr role="row" class="even"><td>10</td><td><a href="#showInText=network">network</a></td><td class="sorting_1">2</td></tr><tr role="row" class="odd"><td>11</td><td><a href="#showInText=section">section</a></td><td class="sorting_1">2</td></tr><tr role="row" class="even"><td>12</td><td><a href="#showInText=material">material</a></td><td class="sorting_1">2</td></tr><tr role="row" class="odd"><td>13</td><td><a href="#showInText=understand">understand</a></td><td class="sorting_1">2</td></tr><tr role="row" class="even"><td>14</td><td><a href="#showInText=1">1</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>15</td><td><a href="#showInText=try">try</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>16</td><td><a href="#showInText=use">use</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>17</td><td><a href="#showInText=way">way</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>18</td><td><a href="#showInText=help">help</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>19</td><td><a href="#showInText=link">link</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>20</td><td><a href="#showInText=wish">wish</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>21</td><td><a href="#showInText=work">work</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>22</td><td><a href="#showInText=basic">basic</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>23</td><td><a href="#showInText=happy">happy</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>24</td><td><a href="#showInText=order">order</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>25</td><td><a href="#showInText=point">point</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>26</td><td><a href="#showInText=start">start</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>27</td><td><a href="#showInText=stick">stick</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>28</td><td><a href="#showInText=stuck">stuck</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>29</td><td><a href="#showInText=train">train</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>30</td><td><a href="#showInText=worry">worry</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>31</td><td><a href="#showInText=write">write</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>32</td><td><a href="#showInText=answer">answer</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>33</td><td><a href="#showInText=assume">assume</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>34</td><td><a href="#showInText=deepen">deepen</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>35</td><td><a href="#showInText=reread">reread</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>36</td><td><a href="#showInText=attempt">attempt</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>37</td><td><a href="#showInText=example">example</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>38</td><td><a href="#showInText=explain">explain</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>39</td><td><a href="#showInText=provide">provide</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>40</td><td><a href="#showInText=refresh">refresh</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>41</td><td><a href="#showInText=familiar">familiar</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>42</td><td><a href="#showInText=learning">learning</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>43</td><td><a href="#showInText=practice">practice</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>44</td><td><a href="#showInText=previous">previous</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>45</td><td><a href="#showInText=question">question</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>46</td><td><a href="#showInText=training">training</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>47</td><td><a href="#showInText=underlie">underlie</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>48</td><td><a href="#showInText=knowledge">knowledge</a></td><td class="sorting_1">1</td></tr><tr role="row" class="odd"><td>49</td><td><a href="#showInText=necessary">necessary</a></td><td class="sorting_1">1</td></tr><tr role="row" class="even"><td>50</td><td><a href="#showInText=understanding">understanding</a></td><td class="sorting_1">1</td></tr></tbody></table><div class="dataTables_paginate paging_simple" id="top_10_lemmatized_paginate"><a class="paginate_button previous disabled" aria-controls="top_10_lemmatized" data-dt-idx="0" tabindex="0" id="top_10_lemmatized_previous"><span class="glyphicon glyphicon-chevron-left">&lt;</span></a><a class="paginate_button next disabled" aria-controls="top_10_lemmatized" data-dt-idx="1" tabindex="0" id="top_10_lemmatized_next"><span class="glyphicon glyphicon-chevron-right">&gt;</span></a></div></div></div>
+
+<p>&nbsp;</p>
+
+
+
+              </div>
+
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+                <p>Showing top 50 most frequent words or lemmatized 
+words. Click on the word in the list to navigate to the places that they
+ appear in the document.</p>
+                <p>
+                  <a href="https://statistics.veriguide.org:8443/vgdocstatscan/docstat/glossary#lemmatized_words" target="_blank" rel="noopener noreferrer">
+                    <span class="material-icons">info</span>
+                    <span>Click here to learn more.</span>
+                  </a>
+                </p><p>
+              </p></div>
+            </div>
+
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+                <div class="col-sm-12 canvas_cont" id="canvas_cloud_cont">
+  <canvas id="canvas_cloud_large" class="large" style="max-width: 100%; height: auto;" width="600" height="400"></canvas>
+  <canvas id="canvas_cloud_lemmatized" class="large js_hide" style="max-width: 100%; height: auto;" width="600" height="400"></canvas>
+</div>
+
+
+
+              </div>
+
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+                <p>In this word cloud, the word having more occurrence will be displayed in larger font size.</p>
+              </div>
+            </div>
+
+            
+          </div>
+          </article>
+          </section>
+
+
+          <section class="bg1">
+          <article class="mdc-layout-grid docstat_wrapper">
+          <div class="content">
+            <h4 id="header_context" class="mdc-typography--headline4">Context analysis</h4>
+            
+            <div class="unify">
+              <div id="vueapp" :class="['mdc-layout-grid__inner', {
+                  'off-noun': mode.label['noun'],
+                  'off-verb': mode.label['verb'],
+                  'off-adjective': mode.label['adjective'],
+                  'off-adverb': mode.label['adverb'],
+                  'off-pronoun': mode.label['pronoun'],
+                  'off-proper-noun': mode.label['proper-noun'],
+                  'off-adposition': mode.label['adposition'],
+                  'off-to': mode.label['to'],
+                  'off-conjunction': mode.label['conjunction'],
+                  'off-interjection': mode.label['interjection'],
+                  'off-numeral': mode.label['numeral'],
+                  'off-particle': mode.label['particle'],
+                  'off-auxiliary': mode.label['auxiliary'],
+                  'off-determiner': mode.label['determiner'],
+                  'off-other': mode.label['other'],
+                  'off-special': mode.label['special'],
+            
+                  'off-positive': mode.label['positive'],
+                  'off-neutral': mode.label['neutral'],
+                  'off-negative': mode.label['negative'],
+            
+                  'off-f': mode.label['f'],
+                  'off-n': mode.label['n'],
+                  'off-m': mode.label['m'],
+            
+                  'off-r-adj': mode.label['r-adj'],
+                  'off-r-adv': mode.label['r-adv'],
+                  'off-r-conj': mode.label['r-conj'],
+                  'off-r-det': mode.label['r-det'],
+                  'off-r-noun': mode.label['r-noun'],
+                  'off-r-part': mode.label['r-part'],
+                  'off-r-prep': mode.label['r-prep'],
+                  'off-r-pron': mode.label['r-pron'],
+                  'off-r-punct': mode.label['r-punct'],
+                  'off-r-verb': mode.label['r-verb'],
+                  'off-r-contr': mode.label['r-contr'],
+                  'off-r-morph': mode.label['r-morph'],
+                  'off-r-orth': mode.label['r-orth'],
+                  'off-r-other': mode.label['r-other'],
+                  'off-r-spell': mode.label['r-spell'],
+                  'off-r-wo': mode.label['r-wo'],
+                  'off-r-adj-form': mode.label['r-adj-form'],
+                  'off-r-noun-infl': mode.label['r-noun-infl'],
+                  'off-r-noun-num': mode.label['r-noun-num'],
+                  'off-r-noun-poss': mode.label['r-noun-poss'],
+                  'off-r-verb-form': mode.label['r-verb-form'],
+                  'off-r-verb-infl': mode.label['r-verb-infl'],
+                  'off-r-verb-sva': mode.label['r-verb-sva'],
+                  'off-r-verb-tense': mode.label['r-verb-tense'],
+                  'off-u-adj': mode.label['u-adj'],
+                  'off-u-adv': mode.label['u-adv'],
+                  'off-u-conj': mode.label['u-conj'],
+                  'off-u-det': mode.label['u-det'],
+                  'off-u-noun': mode.label['u-noun'],
+                  'off-u-part': mode.label['u-part'],
+                  'off-u-prep': mode.label['u-prep'],
+                  'off-u-pron': mode.label['u-pron'],
+                  'off-u-punct': mode.label['u-punct'],
+                  'off-u-verb': mode.label['u-verb'],
+                  'off-u-contr': mode.label['u-contr'],
+                  'off-u-other': mode.label['u-other'],
+                  'off-u-noun-poss': mode.label['u-noun-poss'],
+                  'off-u-verb-form': mode.label['u-verb-form'],
+                  'off-u-verb-tense': mode.label['u-verb-tense'],
+                  'off-m-adj': mode.label['m-adj'],
+                  'off-m-adv': mode.label['m-adv'],
+                  'off-m-conj': mode.label['m-conj'],
+                  'off-m-det': mode.label['m-det'],
+                  'off-m-noun': mode.label['m-noun'],
+                  'off-m-part': mode.label['m-part'],
+                  'off-m-prep': mode.label['m-prep'],
+                  'off-m-pron': mode.label['m-pron'],
+                  'off-m-punct': mode.label['m-punct'],
+                  'off-m-verb': mode.label['m-verb'],
+                  'off-m-contr': mode.label['m-contr'],
+                  'off-m-other': mode.label['m-other'],
+                  'off-m-noun-poss': mode.label['m-noun-poss'],
+                  'off-m-verb-form': mode.label['m-verb-form'],
+                  'off-m-verb-tense': mode.label['m-verb-tense'],
+            
+                  'is-pos': 'pos' === mode.mode
+                }]">
+            
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-desktop">
+                  <h4 v-if="'' === modedata.urlhash">@lang('docstat.submission_context_unify_choose_para')</h4>
+                  <p v-if="'' === modedata.urlhash" v-cloak>
+                    <pagination-select v-on:changepage="handleParaChange($event)" :pagination="pagination" :selectedoption="true"></pagination-select>
+                  </p>
+            
+                  <h4 v-if="'' !== modedata.urlhash" v-cloak>
+                    @lang('docstat.submission_context_unify_choose_highlight_para')
+                    <button class="mdc-button mdc-button--raised" @click.prevent="handleClearHighlight">
+                      <div class="mdc-button__ripple"></div>
+                      <i class="material-icons mdc-button__icon" aria-hidden="true">clear</i>
+                      <span class="mdc-button__label">
+                        <span class="Xlinked-highlight"><% modedata.urlhash %></span>
+                      </span>
+                    </button>
+                  </h4>
+                  <p v-if="'' !== modedata.urlhash" v-cloak>
+                    <pagination-select v-on:changepage="handleParaChange($event)" :pagination="pagination_filtered" :selectedoption="true"></pagination-select>
+                  </p>
+            
+                  <h4>@lang('docstat.submission_context_unify_click_item')</h4>
+                  <label>
+                    <input type="radio" v-model="modedata.mode" value="pos">
+                    <span class="context_label"> @lang('docstat.submission_context_pospeech')</span>
+                  </label><br>
+            
+                  <label>
+                    <input type="radio" v-model="modedata.mode" value="gendercode">
+                    <span class="context_label"> @lang('docstat.submission_context_gendercode')</span>
+                  </label><br>
+            
+                  <label>
+                    <input type="radio" v-model="modedata.mode" value="sentiment">
+                    <span class="context_label"> @lang('docstat.submission_context_semtiment')</span>
+                  </label><br>
+            
+                  <label>
+                    <input type="radio" v-model="modedata.mode" value="gec">
+                    <span class="context_label"> @lang('docstat.submission_context_gec')</span>
+                  </label>
+            
+                  <hr class="w-100">
+            
+                  <h4>@lang('docstat.submission_context_unify_legend')</h4>
+                  <div v-cloak>
+                    <div class="legend_cont">
+                      <p>
+                        <label>
+                          <input type="checkbox" v-model="toggle_tag"></input>
+                          <span class="context_label">@lang('docstat.submission_context_unify_highlightall')</span>
+                        </label>
+                        <label v-if="'pos' === mode.mode" >
+                          <input type="checkbox" v-model="modedata.show_tag"></input>
+                          <span class="context_label">@lang('docstat.submission_context_unify_superscript')</span>
+                        </label>
+                      <p>
+                    </div>
+            
+                    <div v-if="'gender' === mode.mode" class="legend_cont">
+                      <span>
+                        <ruby>
+                          <span class="gec_orig">original text</span>
+                          <rp>(</rp>
+                          <rt>Type of grammar error</rt>
+                          <rp>)</rp>
+                        </ruby>
+                        <!-- <span class="gec_sugg" title="Type of Grammar error">suggested text</span> -->
+                      </span>
+                      <p>@lang('docstat.submission_context_gendercode_legend_desp')</p>
+                    </div>
+            
+                    <div v-if="false && 'gec' === mode.mode" class="legend_cont">
+                      <span>
+                        <ruby>
+                          <span class="gec_orig">original text</span>
+                          <rp>(</rp>
+                          <rt>Type of grammar error</rt>
+                          <rp>)</rp>
+                        </ruby>
+                        <span class="gec_sugg" title="Insert text suggestion">Insert text suggestion</span>
+                      </span>
+                      <p>@lang('docstat.submission_context_gec_legend_desp')</p>
+                    </div>
+            
+                    <pos-legend-control v-on:togglelegendhide2="handleLegendHide2($event)" :pos_legend="pos_legend" :mode="mode"></pos-legend-control>
+                    
+                    <p v-if="'pos' === mode.mode">
+                      <a href="/vgdocstat/docstat/glossary#part_of_speech_percentage" target="_blank" rel="noopener noreferrer">
+                        <span class="material-icons">info</span>
+                        <span>@lang('docstat.submission_general_learn_more')</span>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-8-desktop">
+                  <h4 id="curr_paragraph">Current paragraph: <span v-cloak><% displaypage %></span></h4>
+            
+                  <div class="cbox">
+                    <p v-if="0 === pos.length">Loading...</p>
+                    <app :passage="unify" :para_index="para_index" :mode="mode"></app>
+                  </div>
+                </div>
+            
+                <div v-if="modedata.tagsClass[modedata.urlhash] && '' !== modedata.urlhash" class="pos_word_listing mdc-layout-grid__cell is-pos" v-cloak>
+                  <span v-for="word in pos_word_listing" :class="['mdc-chip', modedata.tagsClass[modedata.urlhash]['c']]"><% word %></span>
+                </div>
+              </div>
+            </div>
+          </article>
+          </section>
+
+
+          <footer class="footer">
+<section class="bg2">
+  <article class="mdc-layout-grid docstat_wrapper">
+    <div class="text-muted">
+      <h5>Disclaimer:</h5>
+      <p>VeriGuide Document Statistics Dashboard is in Beta. It is testing on English content.</p>
+      <p>Data displaying are for reference only. If you have any comments and suggestions, please contact us by <a href="mailto:info@veriguide.org">email</a>.</p>
+    </div>
+  </article>
+</section>
+</footer>
+
+<div class="mdc-touch-target-wrapper docstat_fab">
+  <button class="mdc-fab mdc-fab--mini mdc-fab--touch docstat_gototop">
+    <div class="mdc-fab__ripple"></div>
+    <span class="material-icons mdc-fab__icon">keyboard_arrow_up</span>
+    <div class="mdc-fab__touch"></div>
+  </button>
+</div>
+        </div>
+
+    </div>
+  </main>
+</div>
+
+
+<script>
+/* Menu drawer */
+const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+const topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.getElementById('app-bar'));
+topAppBar.setScrollTarget(document.getElementById('main-content'));
+topAppBar.listen('MDCTopAppBar:nav', () => {
+  drawer.open = !drawer.open;
+});
+/* Menu drawer end */
+
+
+/* Tab */
+// var tabBar = new mdc.tabBar.MDCTabBar(document.querySelector('.mdc-tab-bar'));
+// var contentEls = document.querySelectorAll('.content');
+
+// tabBar.listen('MDCTabBar:activated', function(event) {
+//   // Hide currently-active content
+//   document.querySelector('.content--active').classList.remove('content--active');
+//   // Show content for newly-activated tab
+//   contentEls[event.detail.index].classList.add('content--active');
+// });
+/* Tab end */
+</script>
+
+
+
+<script>
+window.endpoint = `./assets/query.json`
+window.G = window.G || {};
+window.fromHander = window.fromHander || {};
+window.BASEURL = `https://${window.location.host}` + '/keepdashboard'
+/**
+ * Common :: Observe global data
+ *
+ */
+function observe(o, callback) {
+  return new Proxy(o, {
+    set(target, property, value) {
+      callback(property, value);
+      target[property] = value;
+
+      Object.keys(window.fromHander).map(item => {
+        window.fromHander[item](property, value);
+      })
+    },
+  });
+}
+
+window.P = observe(window.G, (property, value) => {});
+
+window.onesubmission = Vue.observable({ onesubmission: {} });
+Object.defineProperty(Vue.prototype, '$onesubmission', {
+  get() { return window.onesubmission.onesubmission; },
+  set(value) { window.onesubmission.onesubmission = value; }
+});
+
+window.urlhash = Vue.observable({ urlhash: {} });
+Object.defineProperty(Vue.prototype, '$urlhash', {
+  get() { return window.urlhash.urlhash; },
+  set(value) { window.urlhash.urlhash = value; }
+});
+
+/**
+ * Common :: Fetch and Callback
+ *
+ */
+function fetchAPI(fetchFunc, variables, cbFunc) {
+  fetchFunc(cbFunc, variables);
+}
+
+/**
+ * Common :: call graphQL
+ *
+ */
+function callGraphQL (query, variables, cb) {
+  $.ajax({
+    url: window.endpoint,
+    contentType: "application/json",
+    type: 'GET',
+    beforeSend: function (xhr) {
+      xhr.setRequestHeader ("Authorization", "1");
+    },
+    data: JSON.stringify({
+      // operationName: "MyQuery",
+      variables: variables || null,
+      query: query
+    }),
+    success: cb
+  });
+}
+/**
+ * Common :: Bar Chart
+ * using Chart.js
+ */
+function createBarChart(el, labels, chartdata, xlabel, ylabel, chartdata2, legend, legend2) {
+  let in_datasets = [{
+    label: legend,
+    backgroundColor: "#458764",
+    data: chartdata
+  }]
+  if (chartdata2) {
+    in_datasets.push({
+      label: legend2,
+      backgroundColor: "#18422c",
+      data: chartdata2
+    })
+  }
+  const data = {
+    labels: labels,
+    datasets: in_datasets
+  }
+
+  const chart = new Chart(el, {
+    data,
+    type: "bar",
+    options: {
+      onClick: function (event, arr) {
+        console.log(`Bar chart`, event, arr);
+        if(arr[0]){
+          console.log(`Will highlight: ${arr[0]._model.label}`);
+          window.location.hash = `posTag=${arr[0]._model.label}`;
+
+          // Scroll to Context
+          let el = document.getElementById("header_context");
+          window.scrollTo({ top: el.offsetTop, left: 0, behavior: "smooth" });
+        }
+      },
+      // title: { display: false },
+      tooltips: {
+      //   intersect: false,
+      //   mode: "nearest",
+      //   xPadding: 10,
+      //   yPadding: 10,
+      //   caretPadding: 10
+        titleFontSize: 12,
+        bodyFontSize: 12,
+      },
+      legend: {
+        display: true
+      },
+      responsive: true,
+      maintainAspectRatio: true,
+      // barRadius: 4,
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: xlabel
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: ylabel
+          },
+          ticks: {
+            min: 0
+          }
+        }]
+      },
+      // layout: { padding: { left: 0, right: 0, top: 0, bottom: 0 } },
+      plugins: {
+        datalabels: {
+          color: 'white',
+          font: {
+            weight: 'bold'
+          },
+          formatter: function (value, context) {
+            return Math.round(value) + '%';
+          }
+        }
+      },
+    }
+  });
+
+  chart.update();
+}
+
+/**
+ * Common :: Radar Chart
+ * using Chart.js
+ */
+function createRadarChart(el, labels, chartdata, xlabel, ylabel) {
+
+
+  const data = {
+    labels: labels,
+    datasets: [{
+        // label: 'dataset 1',
+        borderColor: "#458764",
+        backgroundColor: "rgba(69, 135, 100, 0.5)",
+        pointBackgroundColor: "#FFF",
+        data: chartdata
+      },
+      // {
+      //   // label: 'dataset 2',
+      //   backgroundColor: "#f3f3fb",
+      //   data: [15, 20, 25, 30, 25, 20, 15, 20, 25, 30, 25, 20, 15, 10, 15, 20]
+      // }
+    ]
+  }
+
+
+  const chart = new Chart(el, {
+    data,
+    type: "radar",
+    options: {
+      tooltips: {
+        titleFontSize: 12,
+        bodyFontSize: 12,
+        callbacks: {
+          title: function(tooltipItem, data0) {
+            return data0['labels'][tooltipItem[0]['index']];
+          },
+          label: function(tooltipItem, data0) {
+            return data0['datasets'][0]['data'][tooltipItem['index']];
+          },
+          afterLabel: function(tooltipItem, data0) {
+            let desp = '';
+            let label = data0['labels'][tooltipItem['index']].toString();
+
+            switch (label) {
+              case 'Familiarity':
+                desp = 'Measure on how familiar a certain word is to an adult.';
+                break;
+              case 'Concreteness':
+                desp = 'Measure on how abstract a word is.';
+                break;
+              case 'Imageability':
+                desp = 'Measure on how easy is it to create an image from a word.';
+                break;
+              case 'Age of acquisition':
+                desp = 'Measure on the age at which a word is thought to have been learned.';
+                break;
+              case 'Meaningfulness,Paivios Norms':
+              case 'Meaningfulness,Colorado Norms':
+                desp = 'Measure on how related a word is to other words.';
+                break;
+              default:
+                desp = '';
+            }
+
+            return desp;
+          }
+        }
+      },
+      legend: {
+        display: false
+      },
+      responsive: true,
+      maintainAspectRatio: true,
+      scale: {
+        angleLines: {
+          display: true
+        },
+        ticks: {
+          beginAtZero: true,
+          // min: 0,
+          // max: 100,
+          suggestedMin: 0,
+          suggestedMax: 100,
+          stepSize: 20,
+          showLabelBackdrop: false,
+        },
+        pointLabels: {
+          fontSize: 14,
+        },
+      },
+      // layout: { padding: { left: 0, right: 0, top: 0, bottom: 0 } },
+      // plugins: {
+      //   datalabels: {
+      //     color: '#008000',
+      //     // backgroundColor: '#FFF',
+      //     font: {
+      //       // weight: 'bold'
+      //       size: 16
+      //     },
+      //     formatter: function (value, context) {
+      //       return '';
+      //       return parseFloat(value).toFixed(1) + '';
+      //     }
+      //   }
+      // },
+    }
+  });
+}
+
+/**
+ * Common :: Time-series Bar Chart
+ * using Chart.js
+ */
+function createTimeBarChart(el, labels, chartdata, xlabel, ylabel) {
+  console.log(`QQQ createTimeBarChart   `, el, labels, chartdata)
+  const data = {
+    labels: labels,
+    datasets: [{
+        // label: 'dataset 1',
+        backgroundColor: "#458764",
+        data: chartdata
+      },
+      // {
+      //   // label: 'dataset 2',
+      //   backgroundColor: "#f3f3fb",
+      //   data: [15, 20, 25, 30, 25, 20, 15, 20, 25, 30, 25, 20, 15, 10, 15, 20]
+      // }
+    ]
+  }
+
+  const chart = new Chart(el, {
+    data,
+    type: "bar",
+    options: {
+      // title: { display: false },
+      // tooltips: {
+      //   intersect: false,
+      //   mode: "nearest",
+      //   xPadding: 10,
+      //   yPadding: 10,
+      //   caretPadding: 10
+      // },
+      legend: {
+        display: false
+      },
+      responsive: true,
+      maintainAspectRatio: true,
+      // barRadius: 4,
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: xlabel
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: ylabel
+          }
+        }]
+      },
+      // layout: { padding: { left: 0, right: 0, top: 0, bottom: 0 } },
+      // plugins: {
+      //   datalabels: {
+      //     color: 'white',
+      //     font: {
+      //       weight: 'bold'
+      //     },
+      //     formatter: function(value, context) {
+      //       return Math.round(value) + '%';
+      //     }
+      //   }
+      // },
+    }
+  });
+}
+
+/**
+ * Common :: Bilopar Sentiment Chart
+ * using Chart.js
+ */
+function createBipolarChart(el, labels, chartdata, xlabel, ylabel, colours) {
+  const data = {
+    labels: labels,
+    datasets: [{
+      // label: 'dataset 1',
+      backgroundColor: colours,
+      data: chartdata
+    }]
+  }
+
+  const chart = new Chart(el, {
+    data,
+    type: "bar",
+    options: {
+      // title: { display: false },
+      tooltips: {
+      //   intersect: false,
+      //   mode: "nearest",
+      //   xPadding: 10,
+      //   yPadding: 10,
+      //   caretPadding: 10
+        titleFontSize: 12,
+        bodyFontSize: 12,
+      },
+      legend: {
+        display: false
+      },
+      responsive: true,
+      maintainAspectRatio: true,
+      barRadius: 4,
+      scales: {
+        xAxes: [{
+          display: false,
+          scaleLabel: {
+            display: true,
+            labelString: xlabel
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: ylabel
+          }
+        }]
+      },
+      onClick: function (e, el) {
+        if (el.length) {
+          let el_id = el[0]._index + 1;
+          // document.getElementById(`sentiment_id${el_id}`).scrollIntoView(true)
+          let top_val = document.getElementById(`sentiment_id${el_id}`).offsetTop;
+          document.getElementById(`collapse_sentiment_cont`).scrollTop = top_val;
+        }
+      },
+      // layout: { padding: { left: 0, right: 0, top: 0, bottom: 0 } },
+      plugins: {
+        datalabels: {
+          color: 'white',
+          font: {
+            weight: 'bold'
+          },
+          formatter: function (value, context) {
+            return '';
+          }
+        }
+      },
+    }
+  });
+}
+
+/**
+ * Common :: Histogram
+ * using Google Chart
+ */
+function createHistogram(el, labels, chartdata, title, xAxislabel) {
+  google.charts.load("current", {
+    packages: ["corechart"]
+  });
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable(chartdata);
+
+    var options = {
+      title: title,
+      vAxis: {
+        title: "Frequency"
+      },
+      hAxis: {
+        title: xAxislabel
+      },
+      // histogram: {
+      //   lastBucketPercentile: 5,
+      //   bucketSize: 2,
+      // },
+      legend: {
+        position: 'none'
+      },
+    };
+
+    var chart = new google.visualization.Histogram(el);
+    chart.draw(data, options);
+  }
+
+}
+
+/**
+ * Common :: DataTable
+ * using DataTable
+ */
+function createDocStatDataTable(result, level) {
+  /*
+    {
+      "submission_id": 10000019,
+      "submission_time": "2020-08-03T02:37:39.033+00:00",
+      "tbl_taxa_assignments": [
+        {
+          "assignment_num": 3,
+          "course_uuid": "d6f7ffff-a3c0-41d0-b489-6de662212da7",
+          "tbl_course": {
+            "course_code": "ECON 1845",
+            "tbl_user": {
+              "user_name": "Teaher_Joshua Roach",
+              "role": 1
+            },
+            "course_name": "Intro of Illustrator",
+            "term": "2 - spring",
+            "year": 2018
+          }
+        }
+      ]
+    }
+  */
+  var quizList = [
+    ["hi", "hello"],
+  ]
+
+  var data = [];
+  $.each(result, function (id, record) {
+    if (!record.tbl_taxa_assignments.length) {
+      return
+    }
+    var item = {}
+    let acourse = record.tbl_taxa_assignments[0].tbl_course;
+    let assignment = record.tbl_taxa_assignments[0].assignment_num;
+
+    if (0 === level) {
+      link = `${record.submission_id}`;
+      item = {
+        'prob_name': `<a class="problem-link"
+            href='${window.BASEURL}/docstat/submission/${record.submission_id}'
+            id="${id}">${record.submission_id}</a>`,
+        'code': acourse.course_code,
+        'year': acourse.year,
+        'term': acourse.term,
+        'count': assignment,
+        'user': `${record.user_name}`,
+      };
+    } else if (1 === level) {
+      item = {
+        'prob_name': `<a class="problem-link"
+            href='${window.BASEURL}/docstat/assignment/${record.tbl_taxa_assignments[0].course_uuid}/${assignment}'
+            id="${id}">${acourse.course_name} - assign: ${assignment}</a>`,
+        'code': acourse.course_code,
+        'year': acourse.year,
+        'term': acourse.term,
+        'count': acourse.count,
+        'user': acourse.tbl_user.user_name,
+      };
+    } else {
+      item = {
+        'prob_name': `<a class="problem-link"
+            onClick='javascript:renew("${record.tbl_taxa_assignments[0].course_uuid}",${assignment})'
+            id="${id}">${acourse.course_name} - assign: ${assignment}</a>`,
+        'code': acourse.course_code,
+        'year': acourse.year,
+        'term': acourse.term,
+        'count': acourse.count,
+        'user': acourse.tbl_user.user_name,
+      };
+    }
+
+    data.push(item);
+  });
+
+  var columns = [];
+  if (0 === level) {
+    columns = [{
+        title: "Submission ID"
+      },
+      {
+        title: "Course code"
+      },
+      {
+        title: "Year"
+      },
+      {
+        title: "Term"
+      },
+      {
+        title: "Assignment No."
+      },
+      {
+        title: "Student"
+      },
+    ];
+  } else if (1 === level) {
+    columns = [{
+        title: "Course title"
+      },
+      {
+        title: "Course code"
+      },
+      {
+        title: "Year"
+      },
+      {
+        title: "Term"
+      },
+      {
+        title: "Submission count"
+      },
+      {
+        title: "Leturer"
+      },
+    ];
+  } else {
+    columns = [{
+        title: "Course title"
+      },
+      {
+        title: "Course code"
+      },
+      {
+        title: "Year"
+      },
+      {
+        title: "Term"
+      },
+      {
+        title: "Submission count"
+      },
+      {
+        title: "Leturer"
+      },
+    ];
+  }
+
+  if (data === undefined) {
+    $('.chart-wrapper.problemList').css('display', 'none');
+    $('#problemList-err').css('display', 'block');
+    return false;
+  } else {
+    $.each(quizList, function (index, record) {
+      $('#problemList-menu').append('<a class="quiz-link-menu dropdown-item" id="' + record[0] + '">' + record[1] + '</a><br>');
+    });
+
+    $('.quiz-link-menu').on('mouseover', function () {
+      $(this).css('background-color', 'rgba(58, 118, 248, 0.1)');
+    }).on('mouseout', function () {
+      $(this).css('background-color', 'transparent');
+    });
+
+    var dataSet = $.map(data, function (record, index) {
+      return [$.map(record, function (value, index) {
+        return value;
+      })];
+    });
+    window.G.problemListTable = $('#problemList-table').DataTable({
+      data: dataSet,
+      columns: columns,
+      order: [
+        [0, 'asc']
+      ],
+      pagingType: 'simple',
+      language: {
+        paginate: {
+          previous: '<span class="glyphicon glyphicon-chevron-left"></span>',
+          next: '<span class="glyphicon glyphicon-chevron-right"></span>',
+        },
+        "info": "_START_-_END_ of _TOTAL_",
+        "infoEmpty": "_END_ of _TOTAL_",
+        "infoFiltered": "",
+      },
+      "pageLength": 3,
+      "dom": 'frtpi',
+      responsive: {
+        details: {
+          type: 'column',
+          target: 'tr'
+        }
+      },
+    });
+    //Format search bar
+    var bar = $('#problemList-table_filter input').attr('placeholder', 'Search').detach();
+    $('#problemList-table_filter').empty().append(bar);
+
+    $('#problemList-table tbody').on('click', 'a.problem-link', function () {
+      var probId = $(this).attr('id');
+      currentProbName = $(this).text();
+      // triggerProblemPanel(result[probId]);
+    });
+    $('#problemList-menu').unbind().on('click', 'a.quiz-link-menu', function () {
+      var quizId = $(this).attr('id');
+      currentQuizName = $(this).text();
+
+      $('#problemList-menu').empty();
+      problemListTable.destroy();
+      $('#problemList-table').empty();
+      $('#quizDistribution-chart').empty();
+      $('#studentProblem-table').empty();
+      $('#CSTable-chart').empty();
+      $('#CPTable-chart').empty();
+
+      // ajaxQuizPanel(courseId, platform, quizId);
+    });
+
+    $(".table-loading-list-problemList").hide();
+  }
+}
+
+
+/**
+ * Common :: DataTableGeneric
+ * using DataTableGeneric
+ */
+function createDocStatDataTableGeneric(id, result) {
+  var quizList = [
+    ["hi", "hello"],
+  ]
+
+  var data = [];
+  $.each(result, function (idx, record) {
+    let phrase = ""
+    if ('top_10_phrases' === id || 'top_10_lemmatized' === id) {
+      phrase = `<a href="#showInText=${record[0]}">${record[0]}</a>`;
+    } else {
+      phrase = record[0];
+    }
+    var item = {
+      'idx': '',
+      'phrase': phrase,
+      'value': record[1]
+    };
+    data.push(item);
+  });
+
+  if (data === undefined) {
+    $('.chart-wrapper.problemList').css('display', 'none');
+    $('#problemList-err').css('display', 'block');
+    return false;
+  } else {
+    $.each(quizList, function (index, record) {
+      $('#problemList-menu').append('<a class="quiz-link-menu dropdown-item" id="' + record[0] + '">' + record[1] + '</a><br>');
+    });
+
+    $('.quiz-link-menu').on('mouseover', function () {
+      $(this).css('background-color', 'rgba(58, 118, 248, 0.1)');
+    }).on('mouseout', function () {
+      $(this).css('background-color', 'transparent');
+    });
+
+    var dataSet = $.map(data, function (record, index) {
+      return [$.map(record, function (value, index) {
+        return value;
+      })];
+    });
+    var problemListTable = $(`#${id}`).DataTable({
+      data: dataSet,
+      columnDefs: [ {
+          "searchable": false,
+          "orderable": false,
+          "targets": 0
+      } ],
+      columns: [{
+          title: ""
+        },
+        {
+          title: "Token"
+        },
+        {
+          title: "Occurence"
+        },
+      ],
+      order: [
+        [2, 'desc']
+      ],
+      pagingType: 'simple',
+      language: {
+        paginate: {
+          previous: '<span class="glyphicon glyphicon-chevron-left">&lt;</span>',
+          next: '<span class="glyphicon glyphicon-chevron-right">&gt;</span>',
+        },
+        "info": "_START_-_END_ of _TOTAL_",
+        "infoEmpty": "_END_ of _TOTAL_",
+        "infoFiltered": "",
+      },
+      "pageLength": 50,
+      "dom": 'frtpi',
+      responsive: {
+        details: {
+          type: 'column',
+          target: 'tr'
+        }
+      },
+      searching: false, paging: true, info: false
+    });
+
+    problemListTable.on( 'draw.dt order.dt search.dt', function () {
+      problemListTable.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+        cell.innerHTML = i+1;
+      } );
+    } ).draw();
+
+    //Format search bar
+    var bar = $(`#${id}_filter input`).attr('placeholder', 'Search').detach();
+    $(`#${id}_filter`).empty().append(bar);
+
+    $(`#${id} tbody`).on('click', 'a.problem-link', function () {
+      var probId = $(this).attr('id');
+      currentProbName = $(this).text();
+      // triggerProblemPanel(result[probId]);
+    });
+    $('#problemList-menu').unbind().on('click', 'a.quiz-link-menu', function () {
+      var quizId = $(this).attr('id');
+      currentQuizName = $(this).text();
+
+      $('#problemList-menu').empty();
+      problemListTable.destroy();
+      $(`#${id}`).empty();
+      $('#quizDistribution-chart').empty();
+      $('#studentProblem-table').empty();
+      $('#CSTable-chart').empty();
+      $('#CPTable-chart').empty();
+
+      // ajaxQuizPanel(courseId, platform, quizId);
+    });
+
+    $(".table-loading-list-problemList").hide();
+  }
+}
+
+/**
+ * Writing :: handle radio select
+ */
+function handleTop(id) {
+  let target_el = document.getElementById(id);
+  console.log('handle tab', id)
+  if (target_el) {
+    document.querySelectorAll('.top_tab_content')
+    .forEach(function (el) {
+      el.classList.add("js_hide");
+    });
+
+    target_el.classList.remove("js_hide");
+  }
+
+  let target_canvas = document.querySelectorAll("#canvas_cloud_cont canvas");
+  let target_name = "canvas_cloud_large";
+  target_canvas.forEach(function (el) {
+    el.classList.add("js_hide");
+  });
+
+  if (-1 !== id.indexOf("lemmatized")) {
+    target_name = "canvas_cloud_lemmatized";
+  }
+  document.getElementById(target_name).classList.remove("js_hide");
+}
+
+/**
+ * Common :: Progressbae
+ * using ProgressBarJS
+ */
+function createDocStatProgressBar(selector, min, max) {
+  var bar = new ProgressBar.Line(selector, {
+    strokeWidth: 4,
+    easing: 'easeInOut',
+    duration: 1400,
+    color: '#458764',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: {
+      width: '100%',
+      height: '100%',
+      'border-radius': '4px'
+    },
+    text: {
+      style: {
+        // Text color.
+        // Default: same as stroke color (options.color)
+        color: '#999',
+        position: 'absolute',
+        right: '0',
+        top: '-20px',
+        padding: 0,
+        margin: 0,
+        transform: null
+      },
+      autoStyleContainer: false
+    },
+    from: {
+      color: '#FFEA82'
+    },
+    to: {
+      color: '#ED6A5A'
+    },
+    step: (state, bar) => {
+      bar.setText((parseFloat(bar.value()) * max).toFixed(1));
+    }
+  });
+  return bar;
+
+  // bar.animate(result);  // Number from 0.0 to 1.0
+}
+
+/**
+ * Common :: WordCloud
+ * using WordCloud2.js
+ */
+function createWordCloud(id, param) {
+  WordCloud(document.getElementById(id), param);
+}
+
+/**
+ * Common :: Listing
+ * using vanila JS
+ */
+function createListing(id, list) {
+  let el = document.getElementById(id);
+  let rawHTML = "";
+  if (el) {
+    list.map((item) => {
+      rawHTML = rawHTML + `
+      <li>${item[1]}</li>
+      `
+    })
+  }
+  el.innerHTML = `<ul>${rawHTML}</ul>`;
+}
+
+/**
+ * Common :: Correction
+ * using vanila JS
+ */
+function errant2hint(orig, errant_arr) {
+  let newHtml = orig.split(" ");
+
+  for (let idx = errant_arr.length - 1; idx >= 0; idx--) {
+    let edit = errant_arr[idx];
+    let after = newHtml.slice(edit.eoend);
+    let before = newHtml.slice(0, edit.eostart);
+    let change = [`<span>
+      <ruby>
+        <span style="background-color: pink; text-decoration: line-through;">${edit.eostr}</span>
+        <rp>(</rp><rt>${edit.etype}</rt><rp>)</rp>
+      </ruby>
+      <span style="color: green;" title="${edit.etype}">${edit.ecstr}</span>
+    </span>`]
+    newHtml = before.concat(change, after);
+  }
+
+  return newHtml.join(" ");
+}
+
+
+/**
+ * Common :: Gauge
+ * using Google Chart
+ */
+function createGauge(el, val, title) {
+  google.charts.load('current', {
+    'packages': ['gauge']
+  });
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+
+    var data = google.visualization.arrayToDataTable([
+      ['Label', 'Value'],
+      [title, val],
+    ]);
+
+    var options = {
+      width: 400,
+      height: 120,
+      max: 1,
+      min: -1,
+      redColor: "#ddd3ee",
+      yellowColor: "#d3eedd",
+      redFrom: 0.75,
+      redTo: 1,
+      yellowFrom: -1,
+      yellowTo: -0.75,
+      minorTicks: 2
+    };
+
+    var chart = new google.visualization.Gauge(el);
+
+    chart.draw(data, options);
+  }
+}
+
+/**
+ * Common :: Gauge
+ * using Gauge.js
+ */
+function createRating(el, val, minVal, maxVal, title, elText, zone, vallabel) {
+  var opts = {
+    angle: 0,
+    lineWidth: 0.2,
+    radiusScale: 1,
+    pointer: {
+      length: 0.5,
+      strokeWidth: 0.035,
+      color: '#000000'
+    },
+    limitMax: true,
+    limitMin: false,
+    colorStart: '#6FADCF',
+    colorStop: '#8FC0DA',
+    strokeColor: '#E0E0E0',
+    generateGradient: true,
+    highDpiSupport: true,
+    staticZones: zone || [{
+        strokeStyle: "#F03E3E",
+        min: 0,
+        max: 30
+      },
+      {
+        strokeStyle: "#FFDD00",
+        min: 31,
+        max: 50
+      },
+      {
+        strokeStyle: "#FFDD00",
+        min: 51,
+        max: 70
+      },
+      {
+        strokeStyle: "#30B32D",
+        min: 71,
+        max: 100
+      }
+    ],
+    staticLabels: {
+      font: "10px sans-serif",
+      labels: vallabel || [100, 130, 150, 220.1, 260, 300],
+      color: "#000000",
+      fractionDigits: 0
+    },
+  };
+  var gauge = new Gauge(el).setOptions(opts);
+  gauge.minValue = minVal || 0;
+  gauge.maxValue = maxVal;
+  gauge.setMinValue(0);
+  gauge.animationSpeed = 16;
+  gauge.set(val);
+  gauge.setTextField(elText, 1);
+}
+
+/**
+ * Readability :: Gauge
+ * using Gauge.js
+ */
+function loadReadability (item) {
+  let fkg = item["fkg"];
+  let fre = item["fre"];
+  let ari = Math.round(item["ari"]);
+  let smog = item["smog"];
+
+  let svg_baby = `<span class="glyphicon glyphicon-baby-formula" aria-hidden="true"></span>`;
+  let svg_laugh = `<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-laughing" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path fill-rule="evenodd" d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5z"/><path d="M7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z"/></svg>`;
+  let svg_smile = `<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-smile" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path fill-rule="evenodd" d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683z"/><path d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/></svg>`;
+  let svg_neutral = `<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-neutral" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path fill-rule="evenodd" d="M4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z"/><path d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/></svg>`;
+  let svg_frown = `<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-frown" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path fill-rule="evenodd" d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683z"/><path d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/></svg>`;
+  let svg_dizzy = `<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-dizzy" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path fill-rule="evenodd" d="M9.146 5.146a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708.708l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708zm-5 0a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 1 1 .708.708l-.647.646.647.646a.5.5 0 1 1-.708.708L5.5 7.207l-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708z"/><path d="M10 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/></svg>`;
+  svg_baby = ``;
+  svg_laugh = ``;
+  svg_smile = ``;
+  svg_neutral = ``;
+  svg_frown = ``;
+  svg_dizzy = ``;
+
+  // Hint
+  let fkg_hint = "";
+  if (fkg <= 1) {
+    fkg_hint = `${svg_baby} ` + "Very easy to read.";
+  } else if (fkg > 1 && fkg <= 6) {
+    fkg_hint = `${svg_neutral} ` + "Easy to read.";
+  } else if (fkg > 6 && fkg <= 7) {
+    fkg_hint = `${svg_neutral} ` + "Fairly easy to read.";
+  } else if (fkg > 7 && fkg <= 10) {
+    fkg_hint = `${svg_smile} ` + "Plain English.";
+  } else if (fkg > 10 && fkg <= 12) {
+    fkg_hint = `${svg_laugh} ` + "Nice.";
+  } else if (fkg > 12 && fkg <= 18) {
+    fkg_hint = `${svg_smile} ` + "Hard to read.";
+  } else if (fkg > 18 && fkg <= 20) {
+    fkg_hint = `${svg_frown} ` + "Very hard to read.";
+  } else {
+    fkg_hint = `${svg_dizzy} ` + "Extremely hard to read.";
+  }
+  $("#fkg_hint").html(fkg_hint);
+
+  let fre_hint = "";
+  if (fre <= 10) {
+    fre_hint = `${svg_dizzy} ` + "Professional person could read.";
+  } else if (fre > 10 && fre <= 30) {
+    fre_hint = `${svg_dizzy} ` + "College graduate could read.";
+  } else if (fre > 30 && fre <= 50) {
+    fre_hint = `${svg_frown} ` + "College students could read.";
+  } else if (fre > 50 && fre <= 60) {
+    fre_hint = `${svg_frown} ` + "USA 10th - 12th grade students could read.";
+  } else if (fre > 60 && fre <= 70) {
+    fre_hint = `${svg_laugh} ` + "Very nice. USA 8th and 9th grade students could read.";
+  } else if (fre > 70 && fre <= 80) {
+    fre_hint = `${svg_smile} ` + "Nice. USA 7th grade students could read.";
+  } else if (fre > 80 && fre <= 90) {
+    fre_hint = `${svg_neutral} ` + "6th grade students could read.";
+  } else {
+    fre_hint = `${svg_neutral} ` + "5th grade students could read.";
+  }
+  $("#fre_hint").html(fre_hint);
+
+  let ari_hint = "";
+  if (ari <= 1) {
+    ari_hint = `${svg_baby} ` + "Kindergarten kids can read.";
+  } else if (ari > 1 && ari <= 6) {
+    ari_hint = `${svg_neutral} ` + "Primary school students can read.";
+  } else if (ari > 6 && ari <= 7) {
+    ari_hint = `${svg_smile} ` + "Nice to read.";
+  } else if (ari > 7 && ari <= 10) {
+    ari_hint = `${svg_laugh} ` + "Very nice. Readability is appropriate.";
+  } else if (ari > 10 && ari <= 12) {
+    ari_hint = `${svg_smile} ` + "Secondary school students can read.<br>Suggested to target: 8-10.";
+  } else if (ari > 12 && ari <= 18) {
+    ari_hint = `${svg_frown} ` + "College students can read.<br>Suggested to target: 8-10.";
+  } else if (ari > 18 && ari <= 20) {
+    ari_hint = `${svg_dizzy} ` + "Very hard to read.<br>Suggested to target: 8-10.";
+  } else {
+    ari_hint = ` ` + "Extremely hard to read.<br>Suggested to target: 8-10.";
+  }
+  $("#ari_hint").html(ari_hint);
+
+  // Gauge
+  let fkg_maxVal = (fkg > 20) ? (fkg / 10 + 0.5) * 10 : 20;
+  let fkg_zone = [
+    {
+      strokeStyle: "#c9f0c9",
+      min: 0,
+      max: 1
+    },
+    {
+      strokeStyle: "#a3eda1",
+      min: 1,
+      max: 6
+    },
+    {
+      strokeStyle: "#6ddb6b",
+      min: 6,
+      max: 8
+    },
+    {
+      strokeStyle: "#30B32D",
+      min: 8,
+      max: 10
+    },
+    {
+      strokeStyle: "#FFDD00",
+      min: 10,
+      max: 12
+    },
+    {
+      strokeStyle: "#F03E3E",
+      min: 12,
+      max: 18
+    },
+    {
+      strokeStyle: "#E336B2",
+      min: 18,
+      max: 20
+    },
+    {
+      strokeStyle: "#000000",
+      min: 20,
+      max: fkg_maxVal
+    }
+  ];
+  let fkg_vallabel = [0,2,4,6,8,10,12,
+    { label: "  College", value: 14, font: "9px Arial" },
+    { label: "Grad       ", value: 18, font: "9px Arial" },
+    { label: "Beyond    ", value: 20, font: "9px Arial" },
+  ];
+  createRating(
+    document.getElementById("flesch_kincaid_grade_gauge"),
+    fkg,
+    0,
+    fkg_maxVal,
+    "title",
+    document.getElementById("flesch_kincaid_grade_gauge_text"),
+    fkg_zone,
+    fkg_vallabel
+  );
+
+  let fre_maxVal = 100;
+  let fre_minVal = (fre < 0) ? (fre / 10 - 0.5) * 10 : 0;
+  let fre_zone = [
+    {
+      strokeStyle: "#000000",
+      min: fre_minVal,
+      max: 10
+    },
+    {
+      strokeStyle: "#E336B2",
+      min: 10,
+      max: 30
+    },
+    {
+      strokeStyle: "#F03E3E",
+      min: 30,
+      max: 50
+    },
+    {
+      strokeStyle: "#FFDD00",
+      min: 50,
+      max: 60
+    },
+    {
+      strokeStyle: "#30B32D",
+      min: 60,
+      max: 70
+    },
+    {
+      strokeStyle: "#6ddb6b",
+      min: 70,
+      max: 80
+    },
+    {
+      strokeStyle: "#a3eda1",
+      min: 80,
+      max: 90
+    },
+    {
+      strokeStyle: "#c9f0c9",
+      min: 90,
+      max: fre_maxVal
+    }
+  ];
+  let fre_vallabel = [0,10,20,30,40,50,60,70,80,90,fre_maxVal];
+  if (fre < 0) {
+    fre_vallabel = [fre_minVal,0,10,20,30,40,50,60,70,80,90,fre_maxVal];
+  }
+  // createRating(
+  //   document.getElementById("flesch_reading_ease_gauge"),
+  //   fre,
+  //   fre_minVal,
+  //   fre_maxVal,
+  //   "title",
+  //   document.getElementById("flesch_reading_ease_gauge_text"),
+  //   fre_zone,
+  //   fre_vallabel
+  // );
+
+  let ari_maxVal = (ari > 20) ? Math.round(ari / 10 + 0.5) * 10 : 20;
+  let ari_zone = [
+    {
+      strokeStyle: "#c9f0c9",
+      min: 0,
+      max: 1
+    },
+    {
+      strokeStyle: "#a3eda1",
+      min: 1,
+      max: 6
+    },
+    {
+      strokeStyle: "#6ddb6b",
+      min: 6,
+      max: 8
+    },
+    {
+      strokeStyle: "#30B32D",
+      min: 8,
+      max: 10
+    },
+    {
+      strokeStyle: "#FFDD00",
+      min: 10,
+      max: 12
+    },
+    {
+      strokeStyle: "#F03E3E",
+      min: 12,
+      max: 18
+    },
+    {
+      strokeStyle: "#E336B2",
+      min: 18,
+      max: 20
+    },
+    {
+      strokeStyle: "#000000",
+      min: 20,
+      max: ari_maxVal
+    }
+  ];
+  let ari_vallabel = [0,2,4,6,8,10,12,14,16,18,20,ari_maxVal];
+  // createRating(
+  //   document.getElementById("ari_grade_gauge"),
+  //   ari,
+  //   0,
+  //   ari_maxVal,
+  //   "title",
+  //   document.getElementById("ari_grade_gauge_text"),
+  //   ari_zone,
+  //   ari_vallabel
+  // );
+
+  let smog_maxVal = (smog > 20) ? Math.round(smog / 10 + 0.5) * 10 : 20;
+  let smog_zone = [
+    {
+      strokeStyle: "#c9f0c9",
+      min: 0,
+      max: 1
+    },
+    {
+      strokeStyle: "#a3eda1",
+      min: 1,
+      max: 6
+    },
+    {
+      strokeStyle: "#6ddb6b",
+      min: 6,
+      max: 8
+    },
+    {
+      strokeStyle: "#30B32D",
+      min: 8,
+      max: 10
+    },
+    {
+      strokeStyle: "#FFDD00",
+      min: 10,
+      max: 12
+    },
+    {
+      strokeStyle: "#F03E3E",
+      min: 12,
+      max: 18
+    },
+    {
+      strokeStyle: "#E336B2",
+      min: 18,
+      max: 20
+    },
+    {
+      strokeStyle: "#000000",
+      min: 20,
+      max: smog_maxVal
+    }
+  ];
+  let smog_vallabel = [0,2,4,6,8,10,12,14,16,18,20,smog_maxVal];
+  createRating(
+    document.getElementById("smog_grade_gauge"),
+    smog,
+    0,
+    smog_maxVal,
+    "title",
+    document.getElementById("smog_grade_gauge_text"),
+    smog_zone,
+    smog_vallabel
+  );
+}
+
+/**
+ * Readability :: Dropdown Menu
+ *
+ */
+function handleSelectReadability (value) {
+  console.log('SelectReadability: ', value);
+  let gauge_cont = document.querySelectorAll(".indicator_box .gauge_cont");
+  gauge_cont.forEach((o) => {
+    o.classList.add("js_hide_height");
+  })
+
+  document.querySelector(`.indicator_box .gauge_cont.${value}`).classList.remove("js_hide_height");
+
+  let linkEl = document.querySelector(".readability_explain");
+  let url = linkEl.getAttribute("href");
+  url = url.split("#")[0]
+  linkEl.setAttribute("href", `${url}#${value}`);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+  /**
+   * Use Laravel Api
+   * @return  cb(result) (result: Array of Object)
+   */
+  function useAjax (cb, variables) {
+    wordFrequenciesAJAX = $.get(urlNLP + 'wordfrequencies')
+    .fail(function(xhr, ajaxOptions, thrownError) {
+        console.log(xhr.responseText);
+        console.log(thrownError);
+        console.log('wordFrequencies Ajax Error');
+    }).done(function(xhr, ajaxOptions, thrownError) {
+      //stuList = xhr;
+      // triggerWordFrequencies(xhr['data']['result']['wordFrequencies'],platform);
+      let result = xhr['data']['result']['wordFrequencies']
+      cb(result);
+    });
+  }
+
+  /**
+   * Use GraphQL
+   * @return  cb(result) (result: Array of Object)
+   */
+  function useGraphQL (cb, variables) {
+    callGraphQL("onesubmission",
+    {
+      "submissionid": 4159373,
+      "docid": variables["docid"] || 69196800,
+    }, function (result) {
+      cb(result);
+    });
+  }
+
+
+  /**
+   * Data to View
+   *
+   */
+  function callback (result) {
+    let DATALAYER = "";
+
+    DATALAYER = "onesubmission";
+    // Check data return properly
+    if (!result.data || !result.data[DATALAYER] || !result.data[DATALAYER].length) {
+      console.log(`[Data loading error]:: ${DATALAYER}`);
+    } else {
+      const data = result.data[DATALAYER];
+      window.P[DATALAYER] = data;
+      data.map((item, idx) => {
+        // assign data
+        Object.keys(item).map((key) => {
+          if ('submission_time' == key) {
+            let date1 = moment(item[key], 'YYYY-MM-DD HH:mm:ss').format('DD MMM YYYY HH:mm:ss');
+            $(`.docstat-basic-${key}`).html(date1);
+            return
+          }
+          if (-1 !== Object.keys(item).indexOf(key) && item[key] !== null) {
+            $(`.docstat-basic-${key}`).html(item[key].toLocaleString());
+          } else {
+            console.error(`[docstat-basic] Error: key ${key} not found`);
+          }
+        });
+
+        // Total character for meeting 2021-01-04
+        if (item['characters_length'] && item['characters_with_space']) {
+          let char_len = item['characters_length'] + item['characters_with_space']
+          $(".docstat-basic-characters_length_with_spaces").html(char_len.toLocaleString())
+        }
+      });
+
+      // Send onesubmission to Vue
+      Vue.set(Vue.prototype, '$onesubmission', {
+        "pos": data[0]["unify"]["pos"],
+        "gec": data[0]["unify"]["gec"],
+        "gendercode": data[0]["unify"]["gendercode"],
+        "sentiment": data[0]["unify"]["sentiment"],
+        "part_of_speech": data["0"]["part_of_speech"],
+      });
+    }
+
+    // DATALAYER = "basicinfo";
+    // // Check data return properly
+    // if (!result.data || !result.data[DATALAYER] || !result.data[DATALAYER].length) {
+    //   console.log(`[Data loading error]:: ${DATALAYER}`);
+    // } else {
+    //   const data = result.data[DATALAYER];
+    //   window.P[DATALAYER] = data;
+    //   data.map((item, idx) => {
+    //     // assign data
+    //     Object.keys(item).map((key) => {
+    //       $(`.docstat-basic-${key}`).html(item[key]);
+    //     });
+    //   });
+    // }
+  }
+
+  // Info Box
+  Vue.component("info-box", {
+    template: `<div class="basic_info_cont">
+    </div> `,
+    props: [
+      "pagination",
+    ],
+    data() {
+      return {};
+    },
+    methods: {
+      onPageChange (event) {
+        this.$emit('changepage', event.target.value);
+      },
+    },
+    delimiters: ["<%","%>"]
+  });
+
+  // File Tree_view
+  Vue.component("file-tree-view", {
+    template: `<div class="file_tree_cont"> </div>`,
+    props: [
+    ],
+    data() {
+      return {};
+    },
+    methods: {
+    },
+    delimiters: ["<%","%>"]
+  });
+
+  // File: Table_view
+  Vue.component("file-table-view", {
+    template: `<div class="file_table_cont"> </div>`,
+    props: [
+    ],
+    data() {
+      return {};
+    },
+    methods: {
+    },
+    delimiters: ["<%","%>"]
+  });
+
+  // Submission_info from VG API
+  new Vue({
+    el: '#app_basic_info_filelist',
+    components: { SlVueTree },
+    data() {
+      return {
+        'submission_info': [],
+        'fileTree': [],
+      }
+    },
+    computed: {
+      indvFiles () {
+        if (this.submission_info && this.submission_info.submissionPageInfo && this.submission_info.submissionPageInfo.indvFiles) {
+          return this.submission_info.submissionPageInfo.indvFiles
+        } else {
+          return {}
+        }
+      }
+    },
+    watch: {
+      submission_info (newVal, oldVal) {
+        console.log(`newVal`, newVal)
+        if (!newVal) {
+          return;
+        }
+        const FIELD_ID = "docId";
+        const FIELD_PARENT_ID = "parentDocId";
+        const VAL_NULL = -1;
+        const FIELD_CHILDREN = "children";
+
+        if (!newVal.submissionPageInfo) {
+          // NOP when no data
+          return;
+        }
+
+        const data = newVal.submissionPageInfo.indvFiles;
+
+        if (!data) {
+          this.fileTree = [];
+        }
+
+        const idMapping = data.reduce((acc, el, i) => {
+          acc[el[FIELD_ID]] = i;
+          return acc;
+        }, {});
+
+        let root;
+        data.forEach(el => {
+          el["title"] = "" + el["fileName"];
+          el["isLeaf"] = !el["isArchive"];
+          el["data"] = {
+            ...el
+          };
+
+          // Handle the root element
+          if (el[FIELD_PARENT_ID] === VAL_NULL) {
+            root = el;
+            return;
+          }
+          // Use our mapping to locate the parent element in our data array
+          const parentEl = data[idMapping[el[FIELD_PARENT_ID]]];
+          // Add our current el to its parent's `children` array
+          parentEl[FIELD_CHILDREN] = [...(parentEl[FIELD_CHILDREN] || []), el];
+        });
+
+        this.fileTree = [root];
+      }
+    },
+    methods: {
+      handleNodeClick (node, event) {
+        console.log(`Updating content... handleNodeClick`, node["data"]["docId"]);
+
+        if (-1 !== node["data"]["parentDocId"]) {
+          $("#docstat_viewing_doc").html(node["data"]["fileName"]);
+
+          fetchAPI(
+            useGraphQL,
+            {
+              where: `{submission_id:{_eq:"4159373"}}`,
+              docid: node["data"]["docId"]
+            },
+            callback
+          );
+        }
+      }
+    },
+    created() {
+      if (window.submission_info) {
+        this.submission_info = window.submission_info;
+      }
+
+      let curr_doc = "";
+
+      if (window.submission_info) {
+        curr_doc = window.submission_info.submissionPageInfo.indvFiles.filter(o => -1 !== o.parentDocId)[0];
+        $("#docstat_viewing_doc").html(curr_doc["fileName"]);
+      }
+
+      // Start here
+      fetchAPI(
+        useGraphQL,
+        {
+          where: `{submission_id:{_eq:"4159373"}}`,
+          docid: curr_doc["docId"]
+        },
+        callback
+      );
+
+    },
+    delimiters: ["<%","%>"]
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // Url hash value event handler
+  var $window = $(window);
+  $window.on("hashchange", function (e) {
+    window.urlhash.urlhash = window.location.hash;
+    console.log("hashchange", window.location.hash)
+  });
+
+  // Go to Top button
+  $(".docstat_gototop").on("click", function (e) {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  });
+
+  // Go to file list
+  $("#docstat_viewing_cont .mdc-chip").on("click", function (e) {
+    let el = $("#app_basic_info_filelist");
+    window.scrollTo({ top: el.offset().top - 150, left: 0, behavior: "smooth" });
+  });
+
+  // Word to Context analysis
+  $(document).on("click", ".table-list-wrapper td > a", function (e) {
+    let el = document.getElementById("header_context");
+    window.scrollTo({ top: el.offsetTop, left: 0, behavior: "smooth" });
+  });
+
+  // TrackScroll
+  $window.on("scroll", function (event) {
+    let pos = $window.scrollTop();
+    let $target = $("#docstat_viewing_wrapper");
+    if ($target.length) {
+      let target_top = $target.position().top - 30;
+      let $cont = $("#docstat_viewing_cont");
+
+      if (!$cont.hasClass("fixed") && pos > target_top) {
+        $cont.addClass("fixed");
+      }
+      if ($cont.hasClass("fixed") && pos < target_top) {
+        $cont.removeClass("fixed");
+      }
+    }
+  });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+  let wholeHtml = "";
+  let allLegend = {};
+  let gecdata = {};
+  let DATALAYER = "";
+
+  DATALAYER = "onesubmission";
+
+  window.fromHander[`${DATALAYER}.unify`] = function (property, value) {
+    if (DATALAYER === property) {
+      console.log(`From ${DATALAYER}.unify...`, property, value);
+
+      const data = value;
+
+      // Hide loading icon
+      $(".table-loading-box-courseware").css("display","none");
+    }
+  }
+
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var vc = Vue.extend(VueContext);
+  Vue.component("vctx", vc);
+
+  Vue.component("app", {
+    template: `<div :class="['app_root', mode.mode]">
+      <para-unit :onepara="thispara" :mode="mode"></para-unit>
+    </div>`,
+    props: [
+      "passage",
+      "mode",
+      "para_index"
+    ],
+    data() {
+      return { count: 0 };
+    },
+    computed: {
+      thispara () {
+        return this.passage[this.para_index]
+      }
+    },
+    delimiters: ["<%","%>"]
+  });
+
+  Vue.component("para-unit", {
+    template: `<div class="para_unit">
+      <component v-for="(item, i) in newpara"
+        :is="item.component"
+        :textobj="item.value"
+        :mode="mode"
+        :name="item.name"
+        :key="item.name + i" />
+    </div> `,
+    props: [
+      "onepara",
+      "mode"
+    ],
+    data() {
+      return {};
+    },
+    computed: {
+      newpara () {
+        if (!this.onepara) {
+          // no data
+          return [];
+        }
+
+        let base = this.onepara["pos"];
+        let topic = this.onepara[this.mode.mode];
+
+        let newthing = base.slice().map((item, idx) => {
+          return { name: `name-${idx}`, value: {...item, highlight: []}, component: "pos-unit" }
+        });
+
+        for (let i = topic.length -1; i>=0; i--) {
+          let rule = topic[i];
+
+          try {
+            if (rule["end"]) {
+              newthing = newthing.slice(0, rule["start"])
+              .concat([{name: `name-${rule["start"]}${rule["end"]}-${i}`, value: {
+                before: base.slice(rule["start"], rule["end"]),
+                after: rule["new_text"] || [],
+                tag: rule["tag"],
+                insert: (rule["type"] &&  "INSERT" === rule["type"]),
+                highlight: (rule["highlight"] || []),
+              }, component: "pos-unit-group"}])
+              .concat(newthing.slice(rule["end"]))
+            }
+          } catch (e) {
+            console.log(e);
+          }
+        }
+
+        return newthing
+      }
+    },
+    delimiters: ["<%","%>"]
+  });
+
+  Vue.component("pos-unit-group", {
+    template: `<span class="pos_unit_group">
+      <span :class="[mode.mode + '_edit_before',
+        mode.tagsClass[textobj.tag] ? mode.tagsClass[textobj.tag]['c'] : '',
+      {
+        'positive': 'sentiment' === mode.mode && textobj.tag === 'positive',
+        'neutral': 'sentiment' === mode.mode && textobj.tag === 'neutral',
+        'negative': 'sentiment' === mode.mode && textobj.tag === 'negative',
+
+        'f': 'gendercode' === mode.mode && textobj.tag === 'f',
+        'n': 'gendercode' === mode.mode && textobj.tag === 'n',
+        'm': 'gendercode' === mode.mode && textobj.tag === 'm',
+      }]">
+        <pos-unit v-for="w in textobj.before" :textobj="w" :highlight="textobj.highlight" :mode="mode" :suggestion="textobj.after"></pos-unit>
+      </span>
+      <span v-if="textobj.insert" :class="[mode.mode + '_edit_after',
+        mode.tagsClass[textobj.tag] ? mode.tagsClass[textobj.tag]['c'] : '',
+      ]">
+        <pos-unit v-for="w in textobj.after" :textobj="w" :highlight="textobj.highlight" :mode="mode" :suggestion="textobj.after"></pos-unit>
+      </span>
+    </span>`,
+    props: [
+      "textobj",
+      "mode"
+    ],
+    data() {
+      return {};
+    },
+    delimiters: ["<%","%>"]
+  });
+
+  Vue.component("pos-unit", {
+    template: `<span class="pos_unit">
+      <ruby @click.stop="clickPos($event, name)">
+        <span data-id="id-{name}" :class="[
+            mode.tagsClass[textobj.tag] ? mode.tagsClass[textobj.tag]['c'] : '',
+            {
+              'linked-highlight': -1 !== mode.urlhash.split(',').indexOf(textobj.text),
+              'senti_positive': 'sentiment' === mode.mode && highlight_class > 0,
+              'senti_negative': 'sentiment' === mode.mode && highlight_class < 0,
+            }
+          ]" ><% textobj.text %></span>
+
+        <rt v-if="'pos' === mode.mode && 'ESC' !== textobj.tag && mode.show_tag"><% textobj.tag %></rt>
+        <rt v-if="'gec' === mode.mode"><% (sugg.length ? sugg[0].etype : '') %></rt>
+      </ruby><vctx :ref="'menu-' + name" @open="onContextOpen" @close="onContextClose" :class="['dropdown-menu', {'onright': onright}]">
+        <li class="sugg_title" v-if="'gendercode' === mode.mode">Suggestions:</li>
+
+        <li v-if="'gendercode' === mode.mode" @click.prevent.stop="setSelectedItem('n')" class="dropdown-submenu">
+          <a class="test" tabindex="-1" href="#">Neutral<span class="caret"></span></a>
+          <ul :class="['dropdown-menu', {'gender-show-n': genderclass === 'n'}]">
+            <li v-for="w in sugg.filter(o => o.type==='neutral')"><% w.text %></li>
+            <li v-if="0 === sugg.filter(o => o.type==='neutral').length">---</li>
+          </ul>
+        </li>
+
+        <li v-if="'gendercode' === mode.mode" @click.prevent.stop="setSelectedItem('f')" class="dropdown-submenu">
+          <a class="test" tabindex="-1" href="#">Feminent<span class="caret"></span></a>
+          <ul :class="['dropdown-menu', {'gender-show-f': genderclass === 'f'}]">
+            <li v-for="w in sugg.filter(o => o.type==='feminine')"><% w.text %></li>
+            <li v-if="0 === sugg.filter(o => o.type==='feminine').length">---</li>
+          </ul>
+        </li>
+
+        <li v-if="'gendercode' === mode.mode" @click.prevent.stop="setSelectedItem('m')" class="dropdown-submenu">
+          <a class="test" tabindex="-1" href="#">Masculine<span class="caret"></span></a>
+          <ul :class="['dropdown-menu', {'gender-show-m': genderclass === 'm'}]">
+            <li v-for="w in sugg.filter(o => o.type==='masculine')"><% w.text %></li>
+            <li v-if="0 === sugg.filter(o => o.type==='masculine').length">---</li>
+          </ul>
+        </li>
+
+        <li class="sugg_item" v-if="'sentiment' === mode.mode">Polarity: <% highlight_class %></li>
+
+        <li class="sugg_title" v-if="'gec' === mode.mode">Suggested change:</li>
+        <li class="sugg_item" v-if="'gec' === mode.mode" v-for="w in sugg"><% give_instruction(w.text, w.etype, textobj.text) %></li>
+      </vctx>
+    </span> `,
+    props: [
+      "textobj",
+      "mode",
+      "name",
+      "suggestion",
+      "highlight",
+    ],
+    data() {
+      return {
+        genderclass: "",
+        onright: false,
+      };
+    },
+    computed: {
+      sugg () {
+        return this.suggestion || []
+      },
+      highlight_class () {
+        let that = this
+        let result = 0;
+
+        if ('sentiment' !== this.mode.mode) {
+          return 0;
+        }
+
+        if (this.highlight) {
+          let el = this.highlight.filter(o => {
+            return o.text.toLowerCase() === that.textobj.text.toLowerCase()
+          })
+          if (el.length) {
+            result = parseFloat(el[0]['polarity'].toFixed(2))
+          }
+        }
+        return result
+      },
+    },
+    methods: {
+      clickPos (event, idx) {
+        // Clear all other opened menu
+        document.getElementById("curr_paragraph").click();
+
+        if (this.sugg.length || this.highlight_class) {
+          this.$refs[`menu-${idx}`].open(event);
+        }
+      },
+      onContextOpen (event) {
+        console.log(`onContextOpen`, event.target, event.target.offsetLeft, event.target.offsetLeft > window.outerWidth / 2);
+        this.onright = (event.target.offsetLeft > window.outerWidth / 2);
+      },
+      onContextClose (val) {
+        this.genderclass = "";
+        console.log(`clonContextCloseose`, val);
+      },
+      setSelectedItem (val) {
+        this.genderclass = val;
+        console.log(`setSelectedItem`, val);
+      },
+      give_instruction (sugg, etype, otext) {
+        let result = "";
+
+        let err_template = {
+          "R:ADJ": {
+              "n": "%1 is suggested to be replaced with %2 due to Adjective problem"
+          },
+          "R:ADV": {
+              "n": "%1 is suggested to be replaced with %2 due to Adverb problem"
+          },
+          "R:CONJ": {
+              "n": "%1 is suggested to be replaced with %2 due to Conjunction problem"
+          },
+          "R:DET": {
+              "n": "%1 is suggested to be replaced with %2 due to Determiner problem"
+          },
+          "R:NOUN": {
+              "n": "%1 is suggested to be replaced with %2 due to Noun problem"
+          },
+          "R:PART": {
+              "n": "%1 is suggested to be replaced with %2 due to Particle problem"
+          },
+          "R:PREP": {
+              "n": "%1 is suggested to be replaced with %2 due to Preposition problem"
+          },
+          "R:PRON": {
+              "n": "%1 is suggested to be replaced with %2 due to Pronoun problem"
+          },
+          "R:PUNCT": {
+              "n": "%1 is suggested to be replaced with %2 due to Punctuation problem"
+          },
+          "R:VERB": {
+              "n": "%1 is suggested to be replaced with %2 due to Verb problem"
+          },
+          "R:CONTR": {
+              "n": "%1 is suggested to be replaced with %2 due to Contraction problem"
+          },
+          "R:MORPH": {
+              "n": "%1 is suggested to be replaced with %2 due to Morphology problem"
+          },
+          "R:ORTH": {
+              "n": "%1 is suggested to be replaced with %2 due to Orthography problem"
+          },
+          "R:OTHER": {
+              "n": "%1 is suggested to be replaced with %2 due to Other problem"
+          },
+          "R:SPELL": {
+              "n": "%1 is suggested to be replaced with %2 due to Spelling problem"
+          },
+          "R:WO": {
+              "n": "%1 is suggested to be replaced with %2 due to Word Order problem"
+          },
+          "R:ADJ:FORM": {
+              "n": "%1 is suggested to be replaced with %2 due to Adjective Form problem"
+          },
+          "R:NOUN:INFL": {
+              "n": "%1 is suggested to be replaced with %2 due to Noun Inflection problem"
+          },
+          "R:NOUN:NUM": {
+              "n": "%1 is suggested to be replaced with %2 due to Noun Number problem"
+          },
+          "R:NOUN:POSS": {
+              "n": "%1 is suggested to be replaced with %2 due to Noun Possessive problem"
+          },
+          "R:VERB:FORM": {
+              "n": "%1 is suggested to be replaced with %2 due to Verb Form problem"
+          },
+          "R:VERB:INFL": {
+              "n": "%1 is suggested to be replaced with %2 due to Verb Inflection problem"
+          },
+          "R:VERB:SVA": {
+              "n": "%1 is suggested to be replaced with %2 due to Verb Agreement problem"
+          },
+          "R:VERB:TENSE": {
+              "n": "%1 is suggested to be replaced with %2 due to Verb Tense problem"
+          },
+          "U:ADJ": {
+              "n": "%1 is a unnecessary Adjective"
+          },
+          "U:ADV": {
+              "n": "%1 is a unnecessary Adverb"
+          },
+          "U:CONJ": {
+              "n": "%1 is a unnecessary Conjunction"
+          },
+          "U:DET": {
+              "n": "%1 is a unnecessary Determiner"
+          },
+          "U:NOUN": {
+              "n": "%1 is a unnecessary Noun"
+          },
+          "U:PART": {
+              "n": "%1 is a unnecessary Particle"
+          },
+          "U:PREP": {
+              "n": "%1 is a unnecessary Preposition"
+          },
+          "U:PRON": {
+              "n": "%1 is a unnecessary Pronoun"
+          },
+          "U:PUNCT": {
+              "n": "%1 is a unnecessary Punctuation"
+          },
+          "U:VERB": {
+              "n": "%1 is a unnecessary Verb"
+          },
+          "U:CONTR": {
+              "n": "%1 is a unnecessary Contraction"
+          },
+          "U:OTHER": {
+              "n": "%1 is a unnecessary Other"
+          },
+          "U:NOUN:POSS": {
+              "n": "%1 is a unnecessary Noun Possessive"
+          },
+          "U:VERB:FORM": {
+              "n": "%1 is a unnecessary Verb Form"
+          },
+          "U:VERB:TENSE": {
+              "n": "%1 is a unnecessary Verb Tense"
+          },
+          "M:ADJ": {
+              "n": "Missing Adjective"
+          },
+          "M:ADV": {
+              "n": "Missing Adverb"
+          },
+          "M:CONJ": {
+              "n": "Missing Conjunction"
+          },
+          "M:DET": {
+              "n": "Missing Determiner"
+          },
+          "M:NOUN": {
+              "n": "Missing Noun"
+          },
+          "M:PART": {
+              "n": "Missing Particle"
+          },
+          "M:PREP": {
+              "n": "Missing Preposition"
+          },
+          "M:PRON": {
+              "n": "Missing Pronoun"
+          },
+          "M:PUNCT": {
+              "n": "Missing Punctuation"
+          },
+          "M:VERB": {
+              "n": "Missing Verb"
+          },
+          "M:CONTR": {
+              "n": "Missing Contraction"
+          },
+          "M:OTHER": {
+              "n": "Missing Other"
+          },
+          "M:NOUN:POSS": {
+              "n": "Missing Noun Possessive"
+          },
+          "M:VERB:FORM": {
+              "n": "Missing Verb Form"
+          },
+          "M:VERB:TENSE": {
+              "n": "Missing Verb Tense"
+          }
+        };
+        try {
+          result = err_template[etype]["n"].replace("%1", `"${otext}"`)
+        } catch (e) {
+          console.log(etype, e)
+        }
+        result = (('' === sugg) ? 'Delete this' : result.replace("%2", `"${sugg}"`))
+
+        return result
+      },
+    },
+    delimiters: ["<%","%>"]
+  });
+
+  Vue.component("pagination-select", {
+    template: `<select @change="onPageChange($event)" class="pagination_select">
+      <option v-if="selectedoption">Page no.</option>
+      <option v-for="(option, idx) in pagination" :value="option" ><% option + 1 %></option>
+    </select> `,
+    props: [
+      "pagination",
+      "selectedoption"
+    ],
+    data() {
+      return {};
+    },
+    methods: {
+      onPageChange (event) {
+        this.$emit('changepage', event.target.value);
+      },
+    },
+    delimiters: ["<%","%>"]
+  });
+
+  Vue.component("pos-legend-control", {
+    template: `<div class="mdc-data-table docstat_unify_legend">
+    <div class="mdc-data-table__table-container">
+    <table class="mdc-data-table__table pospeech_legend_control">
+      <thead>
+        <tr class="mdc-data-table__header-row">
+          <th class="mdc-data-table__header-cell" role="columnheader" scope="col">
+            <button v-on:click="handleSortName" class="mdc-button mdc-theme--on-primary">
+              <span>Tag</span>
+              <i v-if="sort_desc && 'name' == sort_type" class="material-icons mdc-button__icon" aria-hidden="true">keyboard_arrow_down</i>
+              <i v-if="!sort_desc && 'name' == sort_type" class="material-icons mdc-button__icon" aria-hidden="true">keyboard_arrow_up</i>
+              <i v-if="'name' !== sort_type" class="material-icons mdc-button__icon" aria-hidden="true">unfold_more</i>
+            </button>
+          </th>
+          <th class="mdc-data-table__header-cell" role="columnheader" scope="col">
+            <button v-on:click="handleSortCount" class="mdc-button mdc-theme--on-primary">
+              <span>Count</span>
+              <i v-if="sort_desc && 'count' == sort_type" class="material-icons mdc-button__icon" aria-hidden="true">keyboard_arrow_down</i>
+              <i v-if="!sort_desc && 'count' == sort_type" class="material-icons mdc-button__icon" aria-hidden="true">keyboard_arrow_up</i>
+              <i v-if="'count' !== sort_type" class="material-icons mdc-button__icon" aria-hidden="true">unfold_more</i>
+            </button>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="mdc-data-table__content">
+        <pos-legend-unit class="" v-on:togglelegendhide1="handleLegendHide1($event)" v-for="legend in pos_legend_sorted" :legend="legend" :mode="mode"></pos-legend-unit>
+      </tbody>
+    </table></div></div> `,
+    props: [
+      "pos_legend",
+      "mode"
+    ],
+    data() {
+      return {
+        sort_desc: true,
+        sort_type: "count",
+      };
+    },
+    computed: {
+      pos_legend_sorted () {
+        let that = this;
+        let sortby_col = ("name" === this.sort_type) ? 0 : 1;
+
+        return this.pos_legend.sort((a, b) => {
+          if ('pos' === that.mode.mode && "name" === that.sort_type) {
+            return (that.sort_desc)
+              ? that.mode.tagsClass[b[0]]['n'] > that.mode.tagsClass[a[0]]['n']
+              : that.mode.tagsClass[a[0]]['n'] > that.mode.tagsClass[b[0]]['n']
+          } else {
+            return (that.sort_desc) ? b[sortby_col] > a[sortby_col] : a[sortby_col] > b[sortby_col]
+          }
+        })
+      }
+    },
+    methods: {
+      handleLegendHide1 (event) {
+        this.$emit('togglelegendhide2', event);
+      },
+      handleSortName (event) {
+        this.sort_desc = !this.sort_desc;
+        this.sort_type = "name";
+      },
+      handleSortCount (event) {
+        this.sort_desc = !this.sort_desc;
+        this.sort_type = "count";
+      },
+    },
+    delimiters: ["<%","%>"]
+  });
+
+  Vue.component("pos-legend-unit", {
+    template: `<tr class="mdc-data-table__row">
+      <td class="mdc-data-table__cell">
+        <span
+          :class="[
+            {'pospeech_legend': true},
+            classname
+          ]" :title="displayname + ' (count: ' + count + ')'"
+          @click="handleClick"
+        ><% mode.tagsClass[legend[0]]['n'] %></span>
+      </td>
+      <td class="mdc-data-table__cell">
+        <span><% count  %></span>
+      </td>
+    </tr> `,
+    props: [
+      "legend",
+      "mode"
+    ],
+    data() {
+      return {};
+    },
+    computed: {
+      classname() {
+        if (this.legend[0]) {
+          if ('pos' === this.mode.mode || 'gec' === this.mode.mode) {
+            try {
+              return this.mode.tagsClass[this.legend[0]]['c'];
+            } catch (e) {
+              console.log(`classname`, this.legend[0])
+            }
+          }
+          return this.legend[0];
+        } else {
+          return "-";
+        }
+      },
+      displayname() {
+        if (this.legend[0]) {
+          if ('pos' === this.mode.mode) {
+            return this.mode.tagsClass[this.legend[0]]['n'];
+          }
+          return this.legend[0];
+        } else {
+          return "-";
+        }
+      },
+      count() {
+        if (this.legend[1]) {
+          return this.legend[1];
+        } else {
+          return "-";
+        }
+      },
+    },
+    methods: {
+      handleClick () {
+        this.$emit('togglelegendhide1', this.legend[0]);
+      }
+    },
+    delimiters: ["<%","%>"]
+  });
+
+  new Vue({
+    el: '#vueapp',
+    // define data - initial display text
+    data() {
+      return {
+        modedata: {
+          mode: "pos",
+          show_tag: true,
+          show_gendercode_neutral: false,
+          label: {
+            "noun": false,
+            "verb": false,
+            "adjective": false,
+            "adverb": false,
+            "pronoun": false,
+            "proper-noun": false,
+            "adposition": false,
+            "to": false,
+            "conjunction": false,
+            "interjection": false,
+            "numeral": false,
+            "particle": false,
+            "auxiliary": false,
+            "determiner": false,
+            "other": false,
+            "special": false,
+
+            "positive": false,
+            "neutral": false,
+            "negative": false,
+
+            "f": false,
+            "n": false,
+            "m": false,
+
+            "r-adj": false,
+            "r-adv": false,
+            "r-conj": false,
+            "r-det": false,
+            "r-noun": false,
+            "r-part": false,
+            "r-prep": false,
+            "r-pron": false,
+            "r-punct": false,
+            "r-verb": false,
+            "r-contr": false,
+            "r-morph": false,
+            "r-orth": false,
+            "r-other": false,
+            "r-spell": false,
+            "r-wo": false,
+            "r-adj-form": false,
+            "r-noun-infl": false,
+            "r-noun-num": false,
+            "r-noun-poss": false,
+            "r-verb-form": false,
+            "r-verb-infl": false,
+            "r-verb-sva": false,
+            "r-verb-tense": false,
+            "u-adj": false,
+            "u-adv": false,
+            "u-conj": false,
+            "u-det": false,
+            "u-noun": false,
+            "u-part": false,
+            "u-prep": false,
+            "u-pron": false,
+            "u-punct": false,
+            "u-verb": false,
+            "u-contr": false,
+            "u-other": false,
+            "u-noun-poss": false,
+            "u-verb-form": false,
+            "u-verb-tense": false,
+            "m-adj": false,
+            "m-adv": false,
+            "m-conj": false,
+            "m-det": false,
+            "m-noun": false,
+            "m-part": false,
+            "m-prep": false,
+            "m-pron": false,
+            "m-punct": false,
+            "m-verb": false,
+            "m-contr": false,
+            "m-other": false,
+            "m-noun-poss": false,
+            "m-verb-form": false,
+            "m-verb-tense": false,
+          },
+          tagsClass: {
+            "ADJ":{"c":"adjective","n":"adjective"},"ADP":{"c":"adposition","n":"adposition"},"ADV":{"c":"adverb","n":"adverb"},"AUX":{"c":"auxiliary","n":"auxiliary"},"CCONJ":{"c":"conjunction","n":"conjunction"},"CONJ":{"c":"conjunction","n":"conjunction"},"DET":{"c":"determiner","n":"determiner"},"ESC":{"c":"","n":"white space"},"INTJ":{"c":"interjection","n":"interjection"},"NOUN":{"c":"noun","n":"noun"},"NUM":{"c":"numeral","n":"numeral"},"PART":{"c":"particle","n":"particle"},"PRON":{"c":"pronoun","n":"pronoun"},"PROPN":{"c":"proper-noun","n":"proper noun"},"PRT":{"c":"particle","n":"particle"},"PUNCT":{"c":"other","n":"punctuation"},"SCONJ":{"c":"conjunction","n":"conjunction"},"SPEC":{"c":"special","n":"special"},"TO":{"c":"adposition","n":"adposition"},"VERB":{"c":"verb","n":"verb"},"X":{"c":"other","n":"other"},"SYM":{"c":"other","n":"symbol"},"a":{"c":"adjective","n":"形容詞"},"ad":{"c":"adverb","n":"副形詞"},"ag":{"c":"adjective","n":"形容詞"},"an":{"c":"noun","n":"名形詞"},"b":{"c":"determiner","n":"區別詞"},"c":{"c":"conjunction","n":"連詞"},"d":{"c":"adverb","n":"副詞"},"df":{"c":"adverb","n":"副詞"},"dg":{"c":"adverb","n":"副詞"},"e":{"c":"interjection","n":"嘆詞"},"f":{"c":"adverb","n":"方位詞"},"i":{"c":"special","n":"成語"},"j":{"c":"pronoun","n":"簡稱略語"},"l":{"c":"special","n":"習用語"},"m":{"c":"numeral","n":"數詞"},"mg":{"c":"numeral","n":"數詞"},"mq":{"c":"numeral","n":"數詞"},"n":{"c":"noun","n":"名詞"},"ng":{"c":"noun","n":"名詞"},"nr":{"c":"noun","n":"名詞"},"nrfg":{"c":"noun","n":"名詞"},"nrt":{"c":"noun","n":"名詞"},"ns":{"c":"noun","n":"名詞"},"nt":{"c":"noun","n":"名詞"},"nz":{"c":"noun","n":"名詞"},"o":{"c":"special","n":"擬聲詞"},"p":{"c":"adposition","n":"介詞"},"q":{"c":"numeral","n":"量詞"},"r":{"c":"pronoun","n":"代詞"},"rg":{"c":"pronoun","n":"代詞"},"rr":{"c":"pronoun","n":"代詞"},"rz":{"c":"pronoun","n":"代詞"},"s":{"c":"noun","n":"處所詞"},"t":{"c":"adverb","n":"時間詞"},"tg":{"c":"adverb","n":"時間詞"},"u":{"c":"particle","n":"助詞"},"ud":{"c":"particle","n":"助詞"},"ug":{"c":"particle","n":"助詞"},"uj":{"c":"particle","n":"助詞"},"ul":{"c":"particle","n":"助詞"},"uv":{"c":"particle","n":"助詞"},"uz":{"c":"particle","n":"助詞"},"v":{"c":"verb","n":"動詞"},"vd":{"c":"adverb","n":"副動詞"},"vg":{"c":"verb","n":"動詞"},"vi":{"c":"verb","n":"動詞"},"vn":{"c":"noun","n":"名動詞"},"vq":{"c":"verb","n":"動詞"},"x":{"c":"other","n":"非語素字"},"y":{"c":"particle","n":"語氣詞"},"z":{"c":"auxiliary","n":"狀態詞"},"zg":{"c":"auxiliary","n":"狀態詞"},
+            "f": {"c":"f","n":"Feminine"},"n": {"c":"n","n":"Neutral"},"m": {"c":"m","n":"Masculine"},
+            "positive": {"c":"positive","n":"Positive"},"neutral": {"c":"neutral","n":"Neutral"},"negative": {"c":"negative","n":"Negative"},
+            "R:ADJ":{"c":"r-adj","n":"Replacement Adjective"},"R:ADV":{"c":"r-adv","n":"Replacement Adverb"},"R:CONJ":{"c":"r-conj","n":"Replacement Conjunction"},"R:DET":{"c":"r-det","n":"Replacement Determiner"},"R:NOUN":{"c":"r-noun","n":"Replacement Noun"},"R:PART":{"c":"r-part","n":"Replacement Particle"},"R:PREP":{"c":"r-prep","n":"Replacement Preposition"},"R:PRON":{"c":"r-pron","n":"Replacement Pronoun"},"R:PUNCT":{"c":"r-punct","n":"Replacement Punctuation"},"R:VERB":{"c":"r-verb","n":"Replacement Verb"},"R:CONTR":{"c":"r-contr","n":"Replacement Contraction"},"R:MORPH":{"c":"r-morph","n":"Replacement Morphology"},"R:ORTH":{"c":"r-orth","n":"Replacement Orthography"},"R:OTHER":{"c":"r-other","n":"Replacement Other"},"R:SPELL":{"c":"r-spell","n":"Replacement Spelling"},"R:WO":{"c":"r-wo","n":"Replacement Word Order"},"R:ADJ:FORM":{"c":"r-adj-form","n":"Replacement Adjective Form"},"R:NOUN:INFL":{"c":"r-noun-infl","n":"Replacement Noun Inflection"},"R:NOUN:NUM":{"c":"r-noun-num","n":"Replacement Noun Number"},"R:NOUN:POSS":{"c":"r-noun-poss","n":"Replacement Noun Possessive"},"R:VERB:FORM":{"c":"r-verb-form","n":"Replacement Verb Form"},"R:VERB:INFL":{"c":"r-verb-infl","n":"Replacement Verb Inflection"},"R:VERB:SVA":{"c":"r-verb-sva","n":"Replacement Verb Agreement"},"R:VERB:TENSE":{"c":"r-verb-tense","n":"Replacement Verb Tense"},"U:ADJ":{"c":"u-adj","n":"Unnecessary Adjective"},"U:ADV":{"c":"u-adv","n":"Unnecessary Adverb"},"U:CONJ":{"c":"u-conj","n":"Unnecessary Conjunction"},"U:DET":{"c":"u-det","n":"Unnecessary Determiner"},"U:NOUN":{"c":"u-noun","n":"Unnecessary Noun"},"U:PART":{"c":"u-part","n":"Unnecessary Particle"},"U:PREP":{"c":"u-prep","n":"Unnecessary Preposition"},"U:PRON":{"c":"u-pron","n":"Unnecessary Pronoun"},"U:PUNCT":{"c":"u-punct","n":"Unnecessary Punctuation"},"U:VERB":{"c":"u-verb","n":"Unnecessary Verb"},"U:CONTR":{"c":"u-contr","n":"Unnecessary Contraction"},"U:OTHER":{"c":"u-other","n":"Unnecessary Other"},"U:NOUN:POSS":{"c":"u-noun-poss","n":"Unnecessary Noun Possessive"},"U:VERB:FORM":{"c":"u-verb-form","n":"Unnecessary Verb Form"},"U:VERB:TENSE":{"c":"u-verb-tense","n":"Unnecessary Verb Tense"},"M:ADJ":{"c":"m-adj","n":"Missing Adjective"},"M:ADV":{"c":"m-adv","n":"Missing Adverb"},"M:CONJ":{"c":"m-conj","n":"Missing Conjunction"},"M:DET":{"c":"m-det","n":"Missing Determiner"},"M:NOUN":{"c":"m-noun","n":"Missing Noun"},"M:PART":{"c":"m-part","n":"Missing Particle"},"M:PREP":{"c":"m-prep","n":"Missing Preposition"},"M:PRON":{"c":"m-pron","n":"Missing Pronoun"},"M:PUNCT":{"c":"m-punct","n":"Missing Punctuation"},"M:VERB":{"c":"m-verb","n":"Missing Verb"},"M:CONTR":{"c":"m-contr","n":"Missing Contraction"},"M:OTHER":{"c":"m-other","n":"Missing Other"},"M:NOUN:POSS":{"c":"m-noun-poss","n":"Missing Noun Possessive"},"M:VERB:FORM":{"c":"m-verb-form","n":"Missing Verb Form"},"M:VERB:TENSE":{"c":"m-verb-tense","n":"Missing Verb Tense"},
+          },
+          hashmode: "word",
+          urlhash: "",
+        },
+        toggle_tag: true,
+        para_index: 0,
+        pos: [],
+        gec: [],
+        gendercode: [],
+        sentiment: [],
+        part_of_speech: {},
+        pos_word_listing: [],
+      }
+    },
+    computed: {
+      unify () {
+        let new_merge = [];
+
+        // Paragraphs
+        for (let i = 0; i < this.pos.length; i++) {
+          new_merge.push({
+            pos: this.pos[i],
+            gec: this.gec[i],
+            gendercode: this.gendercode[i],
+            sentiment: this.sentiment[i],
+          })
+        }
+        return new_merge;
+      },
+      mode () {
+        return this.modedata;
+      },
+      pagination () {
+        return Array.from({ length: this.pos.length }, (_, i) => i);
+      },
+      pagination_filtered () {
+        let selected = [];
+
+        if (this.mode.hashmode !== "pos") {
+          let highlight_words = this.mode.urlhash.split(',');
+          let i;
+
+          this.pos.map((para, idx1) => {
+            for (i = 0; i < para.length; i++) {
+              if (-1 !== highlight_words.indexOf(para[i]["text"])) {
+                selected.push(idx1);
+                break;
+              }
+            }
+          });
+
+          if (0 < selected.length) {
+            this.para_index = selected[0];
+          }
+        } else {
+          this.pos.map((para, idx1) => {
+            selected.push(idx1);
+          });
+        }
+
+        return selected;
+      },
+      displaypage () {
+        return parseInt(this.para_index, 10) + 1
+      },
+      pos_legend () {
+        // Data source
+        let source = this[this.mode.mode];
+
+        // Current Paragraph
+        let pos_count = {};
+        let legend = [];
+
+        if (source[this.para_index]) {
+          source[this.para_index].map(item => {
+            let atag = item.tag;
+            if ("ESC" === item.tag) {
+              return null;
+            }
+
+            if (-1 !== ["CCONJ", "SCONJ"].indexOf(item.tag)) {
+              atag = "CCONJ"
+            }
+
+            if (pos_count[atag]) {
+              pos_count[atag] = pos_count[atag] + 1;
+            } else {
+              pos_count[atag] = 1
+            }
+          });
+        }
+
+        if (pos_count) {
+          legend = Object.entries(pos_count).sort((a, b) => b[1] - a[1]);
+        }
+
+        return legend;
+      }
+    },
+    watch: {
+      '$onesubmission' (val) {
+        // reactive to onesubmission
+        this.pos = val["pos"];
+        this.gec = val["gec"];
+        this.gendercode = val["gendercode"];
+        this.sentiment = val["sentiment"];
+        this.part_of_speech = val["part_of_speech"];
+      },
+      'toggle_tag' (val) {
+        let that = this;
+        Object.keys(this.modedata.label).map(key => {
+          that.modedata.label[key] = !val;
+        })
+      },
+      '$urlhash' (val) {
+        let that = this;
+        if (-1 !== val.indexOf("#ts=")) {
+          // Reset highlight
+          this.modedata.urlhash = "";
+        }
+        if (-1 !== val.indexOf("showInText=")) {
+          // Do navigate to context
+        }
+        let regexp = new RegExp('showInText=([^&]+)', 'g');
+        let matched = [...val.matchAll(regexp)];
+        if (matched.length) {
+          console.log(`matched`, matched[0], matched[0].length, matched[0][1])
+          this.modedata.urlhash = matched[0][1];
+          this.modedata.hashmode = "word";
+        }
+
+        let regexp2 = new RegExp('posTag=([^&]+)', 'g');
+        let matched2 = [...val.matchAll(regexp2)];
+        if (matched2.length) {
+          console.log(`matched`, matched2[0], matched2[0].length, matched2[0][1])
+          this.modedata.urlhash = matched2[0][1];
+          this.modedata.hashmode = "pos";
+
+          // Only highlight that POS words
+          let val = matched2[0][1];
+          Object.keys(this.modedata.label).map(key => {
+            that.modedata.label[key] = true;
+          })
+          if ('pos' === this.mode.mode || 'gendercode' === this.mode.mode || 'gec' === this.mode.mode) {
+            key = this.modedata.tagsClass[val]['c'];
+          }
+          this.modedata.label[key] = false;
+
+          let pos_word_listing = []
+          let selected_pos = this.pos.map(para => {
+            return para.filter(word => word.tag === val).map(x => {
+              pos_word_listing.push(x.text)
+            })
+          })
+          this.pos_word_listing = [...(new Set(pos_word_listing))];
+          console.log(`pos all: `, pos_word_listing)
+        }
+      },
+    },
+    methods: {
+      handleParaChange (val) {
+        this.para_index = val;
+      },
+      handleLegendHide2 (val) {
+        let key = val;
+        if ('pos' === this.mode.mode || 'gendercode' === this.mode.mode || 'gec' === this.mode.mode) {
+          key = this.modedata.tagsClass[val]['c'];
+        }
+        this.modedata.label[key] = !this.modedata.label[key];
+      },
+      handleClearHighlight (val) {
+        let that = this;
+        if ("pos" === this.modedata.hashmode) {
+          Object.keys(this.modedata.label).map(key => {
+            that.modedata.label[key] = false;
+          })
+        }
+        this.modedata.urlhash = "";
+        this.modedata.hashmode = "word";
+      },
+    },
+    created() {
+    },
+    delimiters: ["<%","%>"]
+  })
+})
+</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+  let DATALAYER = "";
+  DATALAYER = "onesubmission";
+
+  window.fromHander[`${DATALAYER}.WordCloud`] = function (property, value) {
+    if (DATALAYER === property) {
+      console.log(`From ${DATALAYER}.WordCloud...`, property, value);
+
+      const data = value;
+      data.map((item) => {
+
+        const list = Object.entries(item["top_10_phrases"]);
+        console.log(`wordcloud....${list}`);
+        createWordCloud("canvas_cloud_large", {
+          list: list,
+          origin: [300, 180],
+          weightFactor: 5
+        });
+
+        const list_lemmatized = Object.entries(item["top_10_lemmatized"]);
+        console.log(`wordcloud....${list_lemmatized}`);
+        createWordCloud("canvas_cloud_lemmatized", {
+          list: list_lemmatized,
+          origin: [300, 180],
+          weightFactor: 5
+        });
+
+      });
+
+      // Hide loading icon
+      $(".table-loading-box-courseware").css("display","none");
+    }
+  }
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+  let DATALAYER = "";
+  DATALAYER = "onesubmission";
+
+  window.fromHander[`${DATALAYER}.Top10phrases`] = function (property, value) {
+    if (DATALAYER === property) {
+      console.log(`From ${DATALAYER}.Top10phrases...`, property, value);
+
+      const data = value;
+      data.map((item) => {
+
+        const list = Object.entries(item["top_10_phrases"]);
+        document.getElementById("top_10_phrases_cont").innerHTML = `<table id="top_10_phrases" class="hover row-border" width="100%"></table>`;
+        createDocStatDataTableGeneric('top_10_phrases', list);
+
+      });
+
+      // Hide loading icon
+      $(".table-loading-box-courseware").css("display","none");
+    }
+  }
+
+  window.fromHander[`${DATALAYER}.Top10lemmatized`] = function (property, value) {
+    if (DATALAYER === property) {
+      console.log(`From ${DATALAYER}.Top10lemmatized...`, property, value);
+
+      const data = value;
+      data.map((item) => {
+
+        const list = Object.entries(item["top_10_lemmatized"]);
+        document.getElementById("top_10_lemmatized_cont").innerHTML = `<table id="top_10_lemmatized" class="hover row-border" width="100%"></table>`;
+        createDocStatDataTableGeneric('top_10_lemmatized', list);
+
+      });
+
+      // Hide loading icon
+      $(".table-loading-box-courseware").css("display","none");
+    }
+  }
+});
+</script>
+
+<script>
+$(document).ready(function () {
+  let DATALAYER = "";
+  DATALAYER = "onesubmission";
+
+  window.fromHander[`${DATALAYER}.Progress`] = function (property, value) {
+    if (DATALAYER === property) {
+      console.log(`From ${DATALAYER}.Progress...`, property, value);
+
+      const data = value;
+      data.map((item) => {
+        // $('#submission_readability-flesch_reading_grade').html(item["flesch_kincaid_grade"]);
+        $('#submission_readability-dale_chall_grade').html(item["dale_chall_grade"]);
+        $('#submission_readability-smog_grade').html(item["smog_grade"]);
+        $('#submission_readability-ari_grade').html(Math.round(item["ari_grade"]));
+        $('#submission_readability-coleman_liau_grade').html(item["coleman_liau_grade"]);
+        $('#submission_readability-flesch_reading_grade_consensus').html(item["flesch_reading_grade_consensus"]);
+
+        $("#flesch_kincaid_grade_gauge").attr("data-gauge", item["flesch_kincaid_grade"]);
+        $("#flesch_reading_ease_gauge").attr("data-gauge", item["flesch_reading_ease"]);
+        $("#ari_grade_gauge").attr("data-gauge", Math.round(item["ari_grade"]));
+        $("#smog_grade_gauge").attr("data-gauge", item["smog_grade"]);
+
+
+        loadReadability({
+          "fkg": $("#flesch_kincaid_grade_gauge").attr("data-gauge"),
+          // "fre": $("#flesch_reading_ease_gauge").attr("data-gauge"),
+          // "ari": $("#ari_grade_gauge").attr("data-gauge"),
+          "smog": $("#smog_grade_gauge").attr("data-gauge"),
+        });
+      });
+    }
+  }
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+  // create chart
+  let DATALAYER = "";
+
+  DATALAYER = "onesubmission";
+
+  window.fromHander[`${DATALAYER}.Chart`] = function (property, value) {
+    if (DATALAYER === property) {
+      console.log(`From ${DATALAYER}.Chart...`, property, value);
+
+      let labels = [];
+      let chartdata = [];
+      let chartdata2 = [];
+      const data = value;
+      data.map((item) => {
+        // Find out unique word portion of each POS
+        console.log(`@@@ Find out unique word portion of each POS.....`)
+        let origin_pos = window.P.onesubmission[0].unify.pos;
+        let pos_obj = {}
+        let chartdata2_prep = {}
+        origin_pos.map((para, idx) => {
+          para.map((word, idx2) => {
+            let word_lower = word.text.toLowerCase();
+
+            if (!pos_obj[word.tag]) {
+              pos_obj[word.tag] = {}
+              if (!pos_obj[word.tag][word_lower]) {
+                pos_obj[word.tag][word_lower] = 1
+              } else {
+                pos_obj[word.tag][word_lower]++;
+              }
+            } else {
+              if (!pos_obj[word.tag][word_lower]) {
+                pos_obj[word.tag][word_lower] = 1
+              } else {
+                pos_obj[word.tag][word_lower]++;
+              }
+            }
+          })
+        })
+        console.log(`@@@ `, pos_obj);
+        Object.keys(pos_obj).map(pos => {
+          let unique_count = Object.keys(pos_obj[pos]).length;
+          let sum_count = Object.keys(pos_obj[pos]).reduce((a, b) => {
+            return a + pos_obj[pos][b]
+          }, 0);
+          console.log(`${pos}: ${unique_count} / ${sum_count}`);
+          chartdata2_prep[pos] = unique_count / sum_count;
+        })
+
+        // Map the POS percentage
+        Object.keys(item["part_of_speech_percentage"]).sort().map((key) => {
+          let val = parseFloat(item["part_of_speech_percentage"][key].replace("%", ""));
+          if ("X" === key || "ESC" === key) {
+            // Skip
+            return;
+          }
+          labels.push(key);
+          chartdata.push(val);
+          chartdata2.push(parseFloat(parseFloat(val * chartdata2_prep[key]).toFixed(2)));
+        });
+
+
+        console.log(`POS bar chart data`, chartdata)
+
+        let canvas = document.createElement('canvas');
+        canvas.setAttribute('id','myChart');
+        canvas.setAttribute('width','400');
+        canvas.setAttribute('height','240');
+        document.getElementById( "myChart" ).remove();
+        document.querySelector('#barchart-container').appendChild(canvas);
+
+        let el = document.getElementById("myChart");
+        let ctx = el.getContext("2d");
+        createBarChart (ctx, labels, chartdata, "Part of speech category", "Percent (%)", chartdata2, "% of tokens", "% of unique tokens");
+      });
+
+      // Hide loading icon
+      $(".table-loading-box-courseware").css("display","none");
+    }
+  }
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+  // create chart
+  let DATALAYER = "";
+
+  DATALAYER = "onesubmission";
+
+  let keys = [
+    "familiarityscale",
+    "concretenessscale",
+    "imageabilityscale",
+    "meaningfulnesscscale",
+    "meaningfulnesspscale",
+    "ageofacquisitionscale",
+  ]
+
+  window.fromHander[`${DATALAYER}.RadarChart`] = function (property, value) {
+    if (DATALAYER === property) {
+      console.log(`From ${DATALAYER}.RadarChart...`, property, value);
+
+      let chartdata = [];
+      const data = value;
+      data.map((item) => {
+        keys.map((key) => {
+          let val = parseFloat(item[key]);
+          if ("ageofacquisitionscale" === key) {
+            chartdata.push(100 - val);
+          } else {
+            chartdata.push(val);
+          }
+        });
+        let ctx = document.getElementById("myRadarChart").getContext("2d");
+        createRadarChart(
+          ctx,
+          ["Familiarity", "Concreteness", "Imageability", ["Meaningfulness", "Colorado Norms"], ["Meaningfulness", "Paivios Norms"], "Age of acquisition"],
+          chartdata,
+          "Lexical metrics", "Score"
+        );
+      });
+
+      // Hide loading icon
+      $(".table-loading-box-courseware").css("display","none");
+    }
+  }
+});
+</script>
+
+<script>
+</script>
+
+
+</body></html>

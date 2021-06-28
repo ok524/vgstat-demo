@@ -1,0 +1,523 @@
+
+/* Context::Part of speech */
+.off-noun .noun,
+.off-verb .verb,
+.off-adjective .adjective,
+.off-adverb .adverb,
+.off-pronoun .pronoun,
+.off-proper-noun .proper-noun,
+.off-adposition .adposition,
+.off-to .to,
+.off-conjunction .conjunction,
+.off-interjection .interjection,
+.off-numeral .numeral,
+.off-particle .particle,
+.off-auxiliary .auxiliary,
+.off-determiner .determiner,
+.off-other .other,
+.off-special .special,
+
+.off-positive .positive,
+.off-neutral .neutral,
+.off-negative .negative,
+
+.off-f .f,
+.off-n .n,
+.off-m .m,
+
+.off-r-adj .r-adj,
+.off-r-adv .r-adv,
+.off-r-conj .r-conj,
+.off-r-det .r-det,
+.off-r-noun .r-noun,
+.off-r-part .r-part,
+.off-r-prep .r-prep,
+.off-r-pron .r-pron,
+.off-r-punct .r-punct,
+.off-r-verb .r-verb,
+.off-r-contr .r-contr,
+.off-r-morph .r-morph,
+.off-r-orth .r-orth,
+.off-r-other .r-other,
+.off-r-spell .r-spell,
+.off-r-wo .r-wo,
+.off-r-adj-form .r-adj-form,
+.off-r-noun-infl .r-noun-infl,
+.off-r-noun-num .r-noun-num,
+.off-r-noun-poss .r-noun-poss,
+.off-r-verb-form .r-verb-form,
+.off-r-verb-infl .r-verb-infl,
+.off-r-verb-sva .r-verb-sva,
+.off-r-verb-tense .r-verb-tense,
+.off-u-adj .u-adj,
+.off-u-adv .u-adv,
+.off-u-conj .u-conj,
+.off-u-det .u-det,
+.off-u-noun .u-noun,
+.off-u-part .u-part,
+.off-u-prep .u-prep,
+.off-u-pron .u-pron,
+.off-u-punct .u-punct,
+.off-u-verb .u-verb,
+.off-u-contr .u-contr,
+.off-u-other .u-other,
+.off-u-noun-poss .u-noun-poss,
+.off-u-verb-form .u-verb-form,
+.off-u-verb-tense .u-verb-tense,
+.off-m-adj .m-adj,
+.off-m-adv .m-adv,
+.off-m-conj .m-conj,
+.off-m-det .m-det,
+.off-m-noun .m-noun,
+.off-m-part .m-part,
+.off-m-prep .m-prep,
+.off-m-pron .m-pron,
+.off-m-punct .m-punct,
+.off-m-verb .m-verb,
+.off-m-contr .m-contr,
+.off-m-other .m-other,
+.off-m-noun-poss .m-noun-poss,
+.off-m-verb-form .m-verb-form,
+.off-m-verb-tense .m-verb-tense,
+
+.off-xxx
+{
+  background-color: transparent !important;
+  box-shadow: none;
+}
+.is-pos .noun {
+  background-color: var(--legend-noun-color, rgb(251, 180, 174));
+}
+.is-pos .verb {
+  background-color: var(--legend-verb-color, rgb(179, 205, 227));
+}
+.is-pos .adjective {
+  background-color: var(--legend-adjective-color, rgb(204, 235, 197));
+}
+.is-pos .adverb {
+  background-color: var(--legend-adverb-color-adv, rgb(222, 203, 228));
+}
+.is-pos .pronoun {
+  background-color: var(--legend-pronoun-color, rgb(254, 217, 166));
+}
+.is-pos .proper-noun {
+  background-color: var(--legend-proper-noun-color, rgb(209, 86, 86));
+}
+.is-pos .adposition {
+  background-color: var(--legend-adposition-color, rgb(255, 255, 204));
+}
+.is-pos .to {
+  background-color: var(--legend-to-color, lightsteelblue);
+}
+.is-pos .conjunction {
+  background-color: var(--legend-conjunction-color, rgb(229, 216, 189));
+}
+.is-pos .interjection {
+  background-color: var(--legend-interjection-color, rgb(253, 218, 236));
+}
+.is-pos .numeral {
+  background-color: var(--legend-numeral-color, rgb(216, 196, 240));
+}
+.is-pos .particle {
+  background-color: var(--legend-particle-color, lightgrey);
+}
+.is-pos .auxiliary {
+  background-color: var(--legend-auxiliary-color, paleturquoise);
+}
+.is-pos .determiner {
+  background-color: var(--legend-determiner-color, lightsalmon);
+}
+.is-pos .other {
+  padding: 1px;
+  background-color: var(--legend-determiner-color, #F7F7F7);
+}
+.is-pos .special {
+  background-color: var(--legend-special-color, darkturquoise);
+}
+.positive {
+  background-color: var(--legend-positive-color, palegreen);
+}
+.neutral {
+  background-color: var(--legend-neutral-color, lightgray);
+}
+.negative {
+  background-color: var(--legend-negative-color, lightpink);
+}
+.senti_positive {
+  padding: 3px 0 !important;
+  background-color: rgb(82, 240, 82);
+}
+.senti_negative {
+  padding: 3px 0 !important;
+  background-color: rgb(248, 109, 130);
+}
+.f {
+  background-color: var(--legend-positive-color, rgb(222, 203, 228));
+}
+.n {
+  background-color: var(--legend-neutral-color, lightgray);
+}
+.m {
+  background-color: var(--legend-positive-color, lightsalmon);
+}
+.r-adj {
+  background-color: var(--legend-r-adj-color, rgb(204, 235, 197));
+}
+.r-adv {
+  background-color: var(--legend-r-adv, rgb(222, 203, 228));
+}
+.r-conj {
+  background-color: var(--legend-r-conj-color, rgb(229, 216, 189));
+}
+.r-det {
+  background-color: var(--legend-r-det-color, lightsalmon);
+}
+.r-noun {
+  background-color: var(--legend-r-noun-color, rgb(251, 180, 174));
+}
+.r-part {
+  background-color: var(--legend-r-part-color, lightgrey);
+}
+.r-prep {
+  background-color: var(--legend-r-prep-color, rgb(255, 255, 204));
+}
+.r-pron {
+  background-color: var(--legend-r-pron-color, rgb(254, 217, 166));
+}
+.r-punct {
+  background-color: var(--legend-r-punct-color, #F7F7F7);
+}
+.r-verb {
+  background-color: var(--legend-r-verb-color, rgb(179, 205, 227));
+}
+.r-contr {
+  background-color: var(--legend-r-contr-color, #999);
+}
+.r-morph {
+  background-color: var(--legend-r-morph-color, rgb(107, 110, 207));
+}
+.r-orth {
+  background-color: var(--legend-r-orth-color, rgb(231, 186, 82));
+}
+.r-other {
+  background-color: var(--legend-r-other-color, #F7F7F7);
+}
+.r-spell {
+  background-color: var(--legend-r-spell-color, rgb(214, 97, 107));
+}
+.r-wo {
+  background-color: var(--legend-r-wo-color, rgb(206, 109, 189));
+}
+.r-adj-form {
+  background-color: var(--legend-r-adj-form-color, rgb(204, 235, 197));
+}
+.r-noun-infl {
+  background-color: var(--legend-r-noun-infl-color, rgb(251, 180, 174));
+}
+.r-noun-num {
+  background-color: var(--legend-r-noun-num-color, rgb(216, 196, 240));
+}
+.r-noun-poss {
+  background-color: var(--legend-r-noun-poss-color, rgb(251, 180, 174));
+}
+.r-verb-form {
+  background-color: var(--legend-r-verb-form-color, rgb(179, 205, 227));
+}
+.r-verb-infl {
+  background-color: var(--legend-r-verb-infl-color, rgb(179, 205, 227));
+}
+.r-verb-sva {
+  background-color: var(--legend-r-verb-sva-color, rgb(179, 205, 227));
+}
+.r-verb-tense {
+  background-color: var(--legend-r-verb-tense-color, rgb(179, 205, 227));
+}
+.u-adj {
+  background-color: var(--legend-u-adj-color, rgb(204, 235, 197));
+}
+.u-adv {
+  background-color: var(--legend-u, rgb(222, 203, 228));
+}
+.u-conj {
+  background-color: var(--legend-u-conj-color, rgb(229, 216, 189));
+}
+.u-det {
+  background-color: var(--legend-u-det-color, lightsalmon);
+}
+.u-noun {
+  background-color: var(--legend-u-noun-color, rgb(251, 180, 174));
+}
+.u-part {
+  background-color: var(--legend-u-part-color, lightgrey);
+}
+.u-prep {
+  background-color: var(--legend-u-prep-color, rgb(255, 255, 204));
+}
+.u-pron {
+  background-color: var(--legend-u-pron-color, rgb(254, 217, 166));
+}
+.u-punct {
+  background-color: var(--legend-u-punct-color, #F7F7F7);
+}
+.u-verb {
+  background-color: var(--legend-u-verb-color, rgb(179, 205, 227));
+}
+.u-contr {
+  background-color: var(--legend-u-contr-color, #999);
+}
+.u-other {
+  background-color: var(--legend-u-other-color, #F7F7F7);
+}
+.u-noun-poss {
+  background-color: var(--legend-u-noun-poss-color, rgb(251, 180, 174));
+}
+.u-verb-form {
+  background-color: var(--legend-u-verb-form-color, rgb(179, 205, 227));
+}
+.u-verb-tense {
+  background-color: var(--legend-u-verb-tense-color, rgb(179, 205, 227));
+}
+.m-adj {
+  background-color: var(--legend-m-adj-color, rgb(204, 235, 197));
+}
+.m-adv {
+  background-color: var(--legend-m, rgb(222, 203, 228));
+}
+.m-conj {
+  background-color: var(--legend-m-conj-color, rgb(229, 216, 189));
+}
+.m-det {
+  background-color: var(--legend-m-det-color, lightsalmon);
+}
+.m-noun {
+  background-color: var(--legend-m-noun-color, rgb(251, 180, 174));
+}
+.m-part {
+  background-color: var(--legend-m-part-color, lightgrey);
+}
+.m-prep {
+  background-color: var(--legend-m-prep-color, rgb(255, 255, 204));
+}
+.m-pron {
+  background-color: var(--legend-m-pron-color, rgb(254, 217, 166));
+}
+.m-punct {
+  background-color: var(--legend-m-punct-color, #F7F7F7);
+}
+.m-verb {
+  background-color: var(--legend-m-verb-color, rgb(179, 205, 227));
+}
+.m-contr {
+  background-color: var(--legend-m-contr-color, #999);
+}
+.m-other {
+  background-color: var(--legend-m-other-color, #F7F7F7);
+}
+.m-noun-poss {
+  background-color: var(--legend-m-noun-poss-color, rgb(251, 180, 174));
+}
+.m-verb-form {
+  background-color: var(--legend-m-verb-form-color, rgb(179, 205, 227));
+}
+.m-verb-tense {
+  background-color: var(--legend-m-verb-tense-color, rgb(179, 205, 227));
+}
+rt {
+  font-size: 80%;
+}
+ruby span {
+  padding: 0 4px;
+  border-radius: 4px;
+}
+#pospeech > span {
+  margin: 0 2px;
+}
+.pospeech_legend_control {
+  padding: 0 0 0 0.5rem;
+}
+.pospeech_legend_control li {
+  min-width: 50%;
+  padding: 4px 0;
+}
+.pospeech_legend {
+  padding: 0 4px;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: top;
+}
+.pospeech_legend:hover {
+  cursor: pointer;
+}
+.toggle-ruby.active {
+  background-color: transparent !important;
+  color: #28a745 !important;
+}
+.toggle-ruby.active ~ #collapseExample3 #pospeech rt {
+  display: none;
+}
+.toggle-ruby .toOn {
+  display: none;
+}
+.toggle-ruby .toOff {
+  display: inline-block;
+}
+.toggle-ruby.active .toOn {
+  display: inline-block;
+}
+.toggle-ruby.active .toOff {
+  display: none;
+}
+ruby {
+  line-height: 1.3;
+}
+.pos_unit {
+  line-height: 4;
+}
+.sugg_title {
+  padding: 0 .5rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+.sugg_item {
+  padding: 0 .5rem;
+  line-height: 1.3;
+}
+
+/* Context::Gendercode */
+.gendercode_bias dt,
+.gendercode_bias dd {
+  width: 47%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/* Context::Sentiment */
+.sentiment_cont {
+  position: relative;
+  margin: 0 0 8px;
+}
+.sentiment_cont span {
+  display: inline-block;
+  vertical-align: top;
+}
+.sentiment_cont .score {
+  width: 2rem;
+  padding-right: 3px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-size: 85%;
+  text-align: right;
+  color: #AAA;
+}
+.sentiment_sentence {
+  padding-left: 2rem;
+  border-left: 4px solid;
+}
+.app_root.gendercode .pos_unit,
+.app_root.sentiment .pos_unit {
+  line-height: 2;
+}
+.app_root.gendercode .pos_unit span,
+.app_root.sentiment .pos_unit span {
+  padding: 0;
+}
+
+
+/* Context::gec */
+.gec_orig {
+  background-color: pink;
+}
+.gec_sugg {
+  color: green;
+}
+
+
+/* Context:Legend */
+.legend_cont {
+  margin: 0 0 1rem;
+}
+
+/* Context:Dropdown menu*/
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+  max-height: 200px;
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  overflow: auto;
+}
+.dropdown-submenu .dropdown-menu li {
+  padding: .5rem;
+  line-height: 1.3;
+}
+.app_root ul.dropdown-menu {
+  overflow-x: visible !important;
+}
+.gender-show-n,
+.gender-show-f,
+.gender-show-m {
+  display: block !important;
+  left: 64% !important;
+  top: 0 !important;
+}
+
+.onright .gender-show-n,
+.onright .gender-show-f,
+.onright .gender-show-m {
+  display: block !important;
+  left: auto !important;
+  right: 100% !important;
+  top: 0 !important;
+}
+
+/* Context:highlight */
+.linked-highlight {
+  padding: 3px 6px !important;
+  border-radius: 20px;
+  background-color: #FAFACC;
+  box-shadow: 0 4px 15px 0px #999;
+}
+
+
+/* Readability */
+.readability_legend_cont {
+  width: 320px;
+  margin: 0 0 1rem;
+  padding: 1rem;
+  border: 1px solid #DDD;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.readability_legend {
+  position: relative;
+}
+.readability_legend::before {
+  content: "";
+  width: 0;
+  height: 0;
+  /* border: 8px solid transparent; */
+  border-top-color: #000;
+  position: absolute;
+  top: -4px;
+  left: calc(3.5 * 36px - 8px);
+}
+.readability_legend span {
+  width: 36px;
+  height: 12px;
+}
+.readability_legend,
+.readability_legend_label {
+  width: calc(7 * 36px);
+  display: flex;
+  justify-content: space-between;
+}
+.readability_legend_label
+span {
+  width: 160px;
+  height: 12px;
+}

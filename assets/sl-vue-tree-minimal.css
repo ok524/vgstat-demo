@@ -1,0 +1,8 @@
+/**
+ * Minified by jsDelivr using clean-css v4.2.3.
+ * Original file: /npm/sl-vue-tree@1.8.5/dist/sl-vue-tree-minimal.css
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+.sl-vue-tree{position:relative;cursor:default;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.sl-vue-tree-root>.sl-vue-tree-nodes-list{overflow:hidden;position:relative;padding-bottom:4px}.sl-vue-tree-selected>.sl-vue-tree-node-item{background-color:rgba(100,100,255,.5)}.sl-vue-tree-node-list{position:relative;display:flex;flex-direction:row}.sl-vue-tree-node-item{position:relative;display:flex;flex-direction:row}.sl-vue-tree-node-item.sl-vue-tree-cursor-inside{outline:1px solid rgba(100,100,255,.5)}.sl-vue-tree-gap{width:20px;min-height:1px}.sl-vue-tree-sidebar{margin-left:auto}.sl-vue-tree-cursor{position:absolute;border:1px solid rgba(100,100,255,.5);height:1px;width:100%}.sl-vue-tree-drag-info{position:absolute;background-color:rgba(0,0,0,.5);opacity:.5;margin-left:20px;margin-bottom:20px;padding:5px 10px}
+/*# sourceMappingURL=/sm/e92198d4a089a70427ec0d7f3123ec46af099f411f90b18261f58631f116ea46.map */
